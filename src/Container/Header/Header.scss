@@ -1,3 +1,5 @@
+@import "/src/assets/ScssStyle/veriables";
+
 * {
     box-sizing: border-box;
 }
@@ -18,6 +20,7 @@ body {
     height: 100px;
     /* background-color: gold; */
     background-color: #25292b;
+    @include font-open_sans (400, 16px)
 }
 
 .conteiner {
@@ -58,7 +61,6 @@ li {
     color: white;
     text-align: center;
     line-height: 50px;
-    font-size: 21px;
 }
 .menu-list a:hover {
     color: #ee6059;
