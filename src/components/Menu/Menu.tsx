@@ -9,7 +9,7 @@ const Menu = (props: Props) => {
                         <a href="">Home</a>
                     </li>
                     <li className="dropdown">
-                        <div className="dropdwn">
+                        <div className="menu-dropdown">
                             <a href="">
                                 Categories
                                 <span className="icon-arrow"></span>

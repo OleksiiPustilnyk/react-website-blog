@@ -18,3 +18,13 @@
     font-size: $font-size;
     
 }
+
+@mixin icon ($icon, $height, $width, $left, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    left:  $left;
+    top: $top;
+}

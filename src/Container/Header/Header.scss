@@ -34,6 +34,7 @@ body {
 .row-header {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
@@ -65,6 +66,21 @@ li {
 .menu-list a:hover {
     color: #ee6059;
 }
+.icon-arrow {
+    background-image: url("/assets/icon/icon-arrow-down-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    right:  0;
+    top: 18px;
+}
+.dropdown:hover .icon-arrow {
+    background-image: url("/assets/icon/icon-arrow-down-pink.svg")
+}
+.icon-arrow::after {
+    position: absolute
+}
 .dropdown {
     position: relative;
     display: inline;
@@ -89,11 +105,42 @@ li {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown:hover .dropdwn a {
+.dropdown:hover .menu-dropdown a {
     color: #ee6059;
 }
 .dropdown:after {
     position: absolute;
+}
+
+.header-links {
+    display: flex;
+
+}
+.border-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ee6059;
+    position: relative;
+}
+
+.icon-instagram {
+    @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, 10px, 10px);
+}
+.icon-facebook {
+    @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, 10px, 10px);
+}
+.icon-twitter {
+    @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, 10px, 10px);
+}
+.icon-youtube {
+    @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, 10px, 10px);
+}
+
+.border-icon:hover {
+    background-color: #25292b;
+    // background-image: url("images/icon-border-white.png");
+    cursor: pointer;
 }
 /* .menu-list:first-child a,
 .menu-list .dropdown:first-child a {
