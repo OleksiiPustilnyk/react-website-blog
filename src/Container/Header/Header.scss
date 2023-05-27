@@ -66,14 +66,9 @@ li {
 .menu-list a:hover {
     color: #ee6059;
 }
+
 .icon-arrow {
-    background-image: url("/assets/icon/icon-arrow-down-white.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 15px;
-    width: 15px;
-    right:  0;
-    top: 18px;
+    @include icon-right ("/assets/icon/icon-arrow-down-white.svg", 15px, 15px, 0px, 18px);
 }
 .dropdown:hover .icon-arrow {
     background-image: url("/assets/icon/icon-arrow-down-pink.svg")
@@ -81,6 +76,23 @@ li {
 .icon-arrow::after {
     position: absolute
 }
+
+.favorites {
+    display: block;
+    position: relative;
+}
+.icon-like {
+    @include icon-right ("/assets/icon/icon-like.svg", 15px, 15px, 0px, 18px);
+}
+.number-of-likes {
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+.menu-list a:hover .number-of-likes{
+    color: white;
+}
+
 .dropdown {
     position: relative;
     display: inline;

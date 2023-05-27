@@ -1,4 +1,4 @@
-import logo from 'assets/logo/Street Blog (2).svg'
+import logo from 'assets/logo/Street.Blog(5).svg'
 
 type Props = {}
 

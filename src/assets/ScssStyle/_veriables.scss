@@ -28,3 +28,13 @@
     left:  $left;
     top: $top;
 }
+
+@mixin icon-right ($icon, $height, $width, $right, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    right:  $right;
+    top: $top;
+}

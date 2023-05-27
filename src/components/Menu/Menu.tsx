@@ -16,7 +16,7 @@ const Menu = (props: Props) => {
                             </a>
                         </div>
                         <div className="dropdown-content">
-                            <a href="">Street style #1</a>
+                            <a href="">Style #1</a>
                             <a href="">Music #2</a>
                             <a href="">Travel #3</a>
                             <a href="">Cars #4</a>
@@ -29,7 +29,13 @@ const Menu = (props: Props) => {
                         <a href="">Contact</a>
                     </li>
                     <li>
-                        <a href="">Favorites</a>
+                        <div className="favorites">
+                            <a href="">
+                                Favorites
+                                <span className="icon-like"></span>
+                                <div className="number-of-likes">0</div>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </nav>
