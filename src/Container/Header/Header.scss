@@ -40,7 +40,6 @@ body {
 .logo {
     max-width: 15%;
     flex: 0 0 15%;
-    color: white;
 }
 .menu {
     max-width: 50%;
@@ -151,7 +150,6 @@ li {
 
 .border-icon:hover {
     background-color: #25292b;
-    // background-image: url("images/icon-border-white.png");
     cursor: pointer;
 }
 /* .menu-list:first-child a,
@@ -161,3 +159,83 @@ li {
 .menu-list .dropdown a {
     border-radius: 0;
 } */
+
+.mob-logo {
+    display: none;
+}
+
+
+// MOBILE //
+@media (max-width: 425px) { 
+    .header {
+        height: 70px;
+    }
+    .row-header {
+        align-items: normal;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .header-links {
+        display: none;
+    }
+    .mob-logo {
+        display: block;
+        max-width: 90%;
+        flex: 0 0 90%;
+    }
+    .mob-menu {
+        position: relative;
+        max-width: 10%;
+        flex: 0 0 10%;
+        display: flex;
+        
+    }
+    .mob-icon-menu {
+        // display: flex;
+        // justify-content: end;
+        @include icon ("/assets/mob-icon/mob-icon-menu-white.svg", 35px, 35px, 0px, 0px);
+    }
+    .mob-icon-menu:hover {
+        @include icon ("/assets/mob-icon/mob-icon-menu-pink.svg", 35px, 35px, 0px, 0px);
+    }
+}
+
+// TABLET //
+// @media (max-width: 1024px) { 
+//     .header {
+//         height: 70px;
+//     }
+//     .row-header {
+//         align-items: normal;
+//     }
+//     .menu {
+//         display: none;
+//     }
+//     .logo {
+//         max-width: 90%;
+//         flex: 0 0 90%;
+//     }
+//     .header-links {
+//         display: none;
+//     }
+//     // .mob-logo {
+//     //     display: block;
+//     //     max-width: 90%;
+//     //     flex: 0 0 90%;
+//     // }
+//     .mob-menu {
+//         position: relative;
+//         max-width: 10%;
+//         flex: 0 0 10%;
+//         display: flex;
+//     }
+//     .mob-icon-menu {
+//         // display: flex;
+//         // justify-content: end;
+//         @include icon ("/assets/mob-icon/mob-icon-menu-white.svg", 35px, 35px, 0px, 0px);
+//     }
+// }
