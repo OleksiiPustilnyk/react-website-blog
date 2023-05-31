@@ -1,0 +1,18 @@
+@import "/src/assets/style/veriables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    // background-color: gold; 
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

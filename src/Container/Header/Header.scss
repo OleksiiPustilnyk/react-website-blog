@@ -1,13 +1,5 @@
-@import "/src/assets/ScssStyle/veriables";
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    // background-color: gold; 
-}
+@import "/src/assets/style/veriables";
+@import "/src/assets/style/style.scss";
 
 .header {
     display: flex;
@@ -21,14 +13,6 @@ body {
     /* background-color: gold; */
     background-color: #25292b;
     @include font-open_sans (400, 16px)
-}
-
-.conteiner {
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .row-header {

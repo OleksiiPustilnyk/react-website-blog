@@ -8,7 +8,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <header className="header">
-            <div className="conteiner">
+            <div className="container">
                 <div className="row-header">
                     <Logo />
                     <Menu />
