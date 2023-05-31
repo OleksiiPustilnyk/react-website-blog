@@ -1,0 +1,40 @@
+@mixin font-inter ($font-weight,$font-size,$line-height) {
+    font-family: 'Inter', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin font-montserrat ($font-weight,$font-size,$line-height) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin font-open_sans ($font-weight,$font-size) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    
+}
+
+@mixin icon ($icon, $height, $width, $left, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    left:  $left;
+    top: $top;
+}
+
+@mixin icon-right ($icon, $height, $width, $right, $top) {
+    background-image: url($icon);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
+    right:  $right;
+    top: $top;
+}
