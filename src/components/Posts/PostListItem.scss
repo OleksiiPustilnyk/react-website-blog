@@ -1,0 +1,46 @@
+@import "/src/assets/style/veriables";
+
+.post {
+    background-color: #1E2123;
+    // padding: 0px;
+    .post-img {
+        text-align: center;
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+    .post-tag {
+        width: 50px;
+        height: 18px;
+        @include font-montserrat (400, 13px);
+        
+        text-align: center;
+        margin-left: 25px;
+        color: white;
+        background-color: #ee6059;
+        position: relative;
+    }
+    .post-like {
+        @include icon-right ("/assets/icon/icon-like.svg", 15px, 15px, 0px, 18px);
+    }
+    
+    .post-title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        @include font-montserrat (700, 22px);
+        color: white;
+    }
+    .post-content {
+        margin-left: 25px;
+        margin-right: 25px;
+        @include font-open_sans (400, 15px);
+        color: #9999;
+    }
+    
+}
+
+
+
