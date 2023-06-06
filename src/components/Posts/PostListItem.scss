@@ -2,9 +2,9 @@
 
 .post {
     background-color: #1E2123;
-    // padding: 0px;
     .post-img {
         text-align: center;
+        margin-bottom: 25px;
         img {
             width: 150px;
             height: auto;
@@ -15,15 +15,21 @@
         width: 50px;
         height: 18px;
         @include font-montserrat (400, 13px);
-        
+        cursor: pointer;
         text-align: center;
         margin-left: 25px;
         color: white;
         background-color: #ee6059;
-        position: relative;
+    }
+    .post-tag:hover {
+        background-color: #1E2123;
     }
     .post-like {
-        @include icon-right ("/assets/icon/icon-like.svg", 15px, 15px, 0px, 18px);
+        background-image: url("/assets/icon/icon-like.svg");
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 15px;
+        margin-right: 25px;
     }
     
     .post-title {

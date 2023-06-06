@@ -16,8 +16,16 @@ const PostListItem = (props: Props) => {
                 <div className="post-img">
                     <img src={props.image} alt="" />
                 </div>
-                <div className="post-tag">{props.tag}</div>
-                <div className="post-like"></div>
+                <Grid
+                    container
+                    justifyContent={'space-between'}
+                    className="post-tag-and-like"
+                >
+                    <Grid item md={2} className="post-tag">
+                        {props.tag}
+                    </Grid>
+                    <Grid item md={0.5} className="post-like"></Grid>
+                </Grid>
                 <div className="post-title">{props.title}</div>
                 <p className="post-content">{props.content}</p>
                 <Grid container spacing={2} className="post-author">
