@@ -10,6 +10,7 @@
             height: auto;
         }
     }
+
     .post-tag {
         width: 50px;
         height: 18px;
@@ -30,17 +31,39 @@
         margin-bottom: 20px;
         margin-left: 25px;
         margin-right: 25px;
+        cursor: pointer;
         @include font-montserrat (700, 22px);
         color: white;
+    }
+    .post-title:hover {
+        color: #ee6059;
     }
     .post-content {
         margin-left: 25px;
         margin-right: 25px;
+        margin-bottom: 30px;
         @include font-open_sans (400, 15px);
         color: #9999;
     }
     
+    .post-author {
+        @include font-montserrat (400, 15px);
+        color: white;
+        position: relative;
+    }
+    .author-avatar {
+        margin-left: 25px;
+        cursor: pointer;
+    }
+    .author-space {
+        position: relative;
+    }
+    .author-icon {
+        @include icon ("/assets/icon/icon-s.svg", 15px, 20px, -15px, 35px)
+    }
+    .icon-quotes {
+        @include icon ("/assets/icon/icon-quotes2.svg", 30px, 30px, 30px, 5px)
+    }
 }
-
 
 
