@@ -9,14 +9,14 @@ type Props = {
     title: string
     content: string
 }
-const PostListItem = (props: Props) => {
+const PostListItem = ({ image, tag, title, content }: Props) => {
     return (
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
                 <div className="post-img">
                     <div className="block">
                         <div className="image">
-                            <img src={props.image} alt="" />
+                            <img src={image} alt="" />
                         </div>
                     </div>
                 </div>
@@ -26,12 +26,12 @@ const PostListItem = (props: Props) => {
                     className="post-tag-and-like"
                 >
                     <Grid item md={2} className="post-tag">
-                        {props.tag}
+                        {tag}
                     </Grid>
                     <Grid item md={0.5} className="post-like"></Grid>
                 </Grid>
-                <div className="post-title">{props.title}</div>
-                <p className="post-content">{props.content}</p>
+                <div className="post-title">{title}</div>
+                <p className="post-content">{content}</p>
                 <Grid container spacing={2} className="post-author">
                     <Grid item md={2.5}>
                         {/* <div className="icon-quotes"></div> */}

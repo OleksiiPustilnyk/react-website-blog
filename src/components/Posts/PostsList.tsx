@@ -3,17 +3,17 @@ import PostListItem from './PostListItem'
 import postsArray from 'utils/postsArray'
 
 type Props = {}
-const PostsList = (props: Props) => {
+const PostsList = ({}: Props) => {
     return (
         <>
             <Grid container spacing={4}>
-                {postsArray.map((post) => (
+                {postsArray.map(({ image, tag, title, content }) => (
                     <Grid item xs={12} sm={6} md={4}>
                         <PostListItem
-                            image={post.image}
-                            tag={post.tag}
-                            title={post.title}
-                            content={post.content}
+                            image={image}
+                            tag={tag}
+                            title={title}
+                            content={content}
                         />
                     </Grid>
                 ))}

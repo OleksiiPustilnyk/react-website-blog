@@ -1,3 +1,5 @@
+import Favorites from 'components/Favorites/Favorites'
+
 type Props = {}
 
 const Menu = (props: Props) => {
@@ -33,8 +35,7 @@ const Menu = (props: Props) => {
                             <div className="favorites">
                                 <a href="">
                                     Favorites
-                                    <span className="icon-like"></span>
-                                    <div className="number-of-likes">0</div>
+                                    <Favorites />
                                 </a>
                             </div>
                         </li>
