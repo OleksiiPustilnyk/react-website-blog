@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper'
-import slideSlider from 'utils/slideSlider'
+import sliderArray from 'utils/sliderArray'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -19,7 +19,7 @@ const Slider = ({}: Props) => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            {slideSlider.map(({ id, image, title }) => (
+            {sliderArray.map(({ id, image, title }) => (
                 <>
                     <SwiperSlide key={id} className="slide">
                         <img src={image} alt={title} />

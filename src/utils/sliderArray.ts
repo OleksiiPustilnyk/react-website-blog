@@ -4,7 +4,7 @@ type Slide = {
     title: string
 }
 
-const slideSlider: Slide[] = [
+const sliderArray: Slide[] = [
     {
         id: 1,
         image: '/images/images-slider/image-slide1.jpeg',
@@ -27,4 +27,4 @@ const slideSlider: Slide[] = [
     },
 ]
 
-export default slideSlider
+export default sliderArray
