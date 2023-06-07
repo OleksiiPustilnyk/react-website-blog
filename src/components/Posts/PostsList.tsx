@@ -7,8 +7,8 @@ const PostsList = ({}: Props) => {
     return (
         <>
             <Grid container spacing={4}>
-                {postsArray.map(({ image, tag, title, content }) => (
-                    <Grid item xs={12} sm={6} md={4}>
+                {postsArray.map(({ id, image, tag, title, content }) => (
+                    <Grid item xs={12} sm={6} md={4} key={id}>
                         <PostListItem
                             image={image}
                             tag={tag}

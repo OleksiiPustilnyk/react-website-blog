@@ -1,4 +1,5 @@
 type Post = {
+    id: number
     image: string
     tag: string
     title: string
@@ -7,6 +8,7 @@ type Post = {
 
 const postsArray: Post[] = [
     {
+        id: 1,
         image: '/images/images-posts/car.jpeg',
         tag: 'test',
         title: 'TEST1',
@@ -14,6 +16,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 2,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST2',
@@ -21,6 +24,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 3,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST3',
@@ -28,6 +32,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 4,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST4',
@@ -35,6 +40,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 5,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST5',
@@ -42,6 +48,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 6,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST6',
@@ -49,6 +56,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 7,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST7',
@@ -56,6 +64,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 8,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST8',
@@ -63,6 +72,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 9,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST9',
@@ -70,6 +80,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 10,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST10',
@@ -77,6 +88,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 11,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST11',
@@ -84,6 +96,7 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
+        id: 12,
         image: '/images/images-posts/image_street_style_summer.jpeg',
         tag: 'test',
         title: 'TEST12',
