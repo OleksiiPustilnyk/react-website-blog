@@ -14,7 +14,11 @@ const PostListItem = (props: Props) => {
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
                 <div className="post-img">
-                    <img src={props.image} alt="" />
+                    <div className="block">
+                        <div className="image">
+                            <img src={props.image} alt="" />
+                        </div>
+                    </div>
                 </div>
                 <Grid
                     container

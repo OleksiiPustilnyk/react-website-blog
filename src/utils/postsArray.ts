@@ -7,7 +7,7 @@ type Post = {
 
 const postsArray: Post[] = [
     {
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/car.jpeg',
         tag: 'test',
         title: 'TEST1',
         content:
