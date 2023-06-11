@@ -1,0 +1,16 @@
+
+.slider-image {
+    width: 100%;
+    object-fit:cover;
+    height: calc(100vh - 70px);
+}
+.swiper-pagination-bullet {
+    border-radius: 20px;
+    width: 250px;
+    height: 150px;
+    margin: 0 20px 30px 20px !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #ee6059;
+    opacity: 10%;
+}
