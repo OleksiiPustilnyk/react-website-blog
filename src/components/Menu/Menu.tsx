@@ -9,31 +9,31 @@ const Menu = (props: Props) => {
                 <nav>
                     <ul className="menu-list">
                         <li>
-                            <a href="">Home</a>
+                            <a href="Home">Home</a>
                         </li>
                         <li className="dropdown">
                             <div className="menu-dropdown">
-                                <a href="">
+                                <a href="Categories">
                                     Categories
                                     <span className="icon-arrow"></span>
                                 </a>
                             </div>
                             <div className="dropdown-content">
-                                <a href="">Style #1</a>
-                                <a href="">Music #2</a>
-                                <a href="">Travel #3</a>
-                                <a href="">Cars #4</a>
+                                <a href="Style">Style #1</a>
+                                <a href="Music">Music #2</a>
+                                <a href="Travel">Travel #3</a>
+                                <a href="Cars">Cars #4</a>
                             </div>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="About">About</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="Contact">Contact</a>
                         </li>
                         <li>
                             <div className="favorites">
-                                <a href="">
+                                <a href="Favorites">
                                     Favorites
                                     <Favorites />
                                 </a>
