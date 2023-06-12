@@ -18,12 +18,12 @@ import './Slider.scss'
 type Props = {}
 
 const Slider = ({}: Props) => {
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index: number, className: string) {
-            return '<span class="' + className + '">' + (index + 10) + '</span>'
-        },
-    }
+    // const pagination = {
+    //     clickable: true,
+    //     renderBullet: function (index: number, className: string) {
+    //         return '<span class="' + className + '">' + (index + 10) + '</span>'
+    //     },
+    // }
     return (
         <Swiper
             modules={[
