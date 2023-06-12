@@ -3,7 +3,7 @@ import PostListItem from './PostListItem'
 import postsArray from 'utils/postsArray'
 
 type Props = {}
-const PostsList = ({}: Props) => {
+const PostsList = (props: Props) => {
     return (
         <>
             <Grid container spacing={4}>
