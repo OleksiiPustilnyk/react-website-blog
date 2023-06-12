@@ -12,140 +12,139 @@
     height: 100px;
     /* background-color: gold; */
     background-color: #25292b;
-    @include font-open_sans (400, 16px)
-}
+    @include font-open_sans (400, 16px);
 
-.row-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logo {
-    max-width: 15%;
-    flex: 0 0 15%;
-}
-.menu {
-    max-width: 50%;
-    flex: 0 0 50%;
-}
-.menu-list {
-    display: flex;
-}
-li {
-    list-style-type: none;
-}
-.menu-list li {
-    width: 20%;
-}
-.menu-list a {
-    display: block;
-    height: 50px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-}
-.menu-list a:hover {
-    color: #ee6059;
-}
-
-.icon-arrow {
-    @include icon-right ("/assets/icon/icon-arrow-down-white.svg", 15px, 15px, 0px, 18px);
-}
-.dropdown:hover .icon-arrow {
-    background-image: url("/assets/icon/icon-arrow-down-pink.svg")
-}
-.icon-arrow::after {
-    position: absolute
-}
-
-.favorites {
-    display: block;
-    position: relative;
-}
-.icon-like {
-    @include icon-right ("/assets/icon/icon-like.svg", 15px, 15px, 0px, 18px);
-}
-.number-of-likes {
-    position: absolute;
-    top: 0;
-    right: -15px;
-}
-.menu-list a:hover .number-of-likes{
-    color: white;
-}
-
-.dropdown {
-    position: relative;
-    display: inline;
-    z-index: 10;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1e2123;
-    // top: 75px;
-    /* border-radius: 10px; */
-    width: 200%;
-}
-.dropdown-content a {
-    color: white;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: #ee6059;
-    color: white;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .menu-dropdown a {
-    color: #ee6059;
-}
-.dropdown:after {
-    position: absolute;
-}
-
-.header-links {
-    display: flex;
-
-}
-.border-icon {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    background-color: #ee6059;
-    position: relative;
-}
-
-.icon-instagram {
-    @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, 10px, 10px);
-}
-.icon-facebook {
-    @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, 10px, 10px);
-}
-.icon-twitter {
-    @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, 10px, 10px);
-}
-.icon-youtube {
-    @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, 10px, 10px);
-}
-
-.border-icon:hover {
-    background-color: #25292b;
-    cursor: pointer;
-}
-/* .menu-list:first-child a,
-.menu-list .dropdown:first-child a {
-    border-radius: 10px 10px 0 0;
-}
-.menu-list .dropdown a {
-    border-radius: 0;
-} */
-
-.mob-logo {
-    display: none;
+    .row-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo {
+        max-width: 15%;
+        flex: 0 0 15%;
+    }
+    .menu {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .menu-list {
+        display: flex;
+    }
+    li {
+        list-style-type: none;
+    }
+    .menu-list li {
+        width: 20%;
+    }
+    .menu-list a {
+        display: block;
+        height: 50px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+    }
+    .menu-list a:hover {
+        color: #ee6059;
+    }
+    
+    .icon-arrow {
+        @include icon-right ("/assets/icon/icon-arrow-down-white.svg", 15px, 15px, 0px, 18px);
+    }
+    .dropdown:hover .icon-arrow {
+        background-image: url("/assets/icon/icon-arrow-down-pink.svg")
+    }
+    .icon-arrow::after {
+        position: absolute
+    }
+    
+    .favorites {
+        display: block;
+        position: relative;
+    }
+    .icon-like {
+        @include icon-right ("/assets/icon/icon-like.svg", 15px, 15px, 0px, 18px);
+    }
+    .number-of-likes {
+        position: absolute;
+        top: 0;
+        right: -15px;
+    }
+    .menu-list a:hover .number-of-likes{
+        color: white;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline;
+        z-index: 10;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1e2123;
+        // top: 75px;
+        /* border-radius: 10px; */
+        width: 200%;
+    }
+    .dropdown-content a {
+        color: white;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #ee6059;
+        color: white;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .menu-dropdown a {
+        color: #ee6059;
+    }
+    .dropdown:after {
+        position: absolute;
+    }
+    
+    .header-links {
+        display: flex;
+    
+    }
+    .border-icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-color: #ee6059;
+        position: relative;
+    }
+    
+    .icon-instagram {
+        @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, 10px, 10px);
+    }
+    .icon-facebook {
+        @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, 10px, 10px);
+    }
+    .icon-twitter {
+        @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, 10px, 10px);
+    }
+    .icon-youtube {
+        @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, 10px, 10px);
+    }
+    
+    .border-icon:hover {
+        background-color: #25292b;
+        cursor: pointer;
+    }
+    /* .menu-list:first-child a,
+    .menu-list .dropdown:first-child a {
+        border-radius: 10px 10px 0 0;
+    }
+    .menu-list .dropdown a {
+        border-radius: 0;
+    } */
+    
+    .mob-logo {
+        display: none;
+    }
 }
 
 
@@ -153,38 +152,39 @@ li {
 @media (max-width: 425px) { 
     .header {
         height: 70px;
-    }
-    .row-header {
-        align-items: normal;
-    }
-    .menu {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-    .header-links {
-        display: none;
-    }
-    .mob-logo {
-        display: block;
-        max-width: 90%;
-        flex: 0 0 90%;
-    }
-    .mob-menu {
-        position: relative;
-        max-width: 10%;
-        flex: 0 0 10%;
-        display: flex;
-        
-    }
-    .mob-icon-menu {
-        // display: flex;
-        // justify-content: end;
-        @include icon ("/assets/mob-icon/mob-icon-menu-white.svg", 35px, 35px, 0px, 0px);
-    }
-    .mob-icon-menu:hover {
-        @include icon ("/assets/mob-icon/mob-icon-menu-pink.svg", 35px, 35px, 0px, 0px);
+
+        .row-header {
+            align-items: normal;
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            display: none;
+        }
+        .header-links {
+            display: none;
+        }
+        .mob-logo {
+            display: block;
+            max-width: 90%;
+            flex: 0 0 90%;
+        }
+        .mob-menu {
+            position: relative;
+            max-width: 10%;
+            flex: 0 0 10%;
+            display: flex;
+            
+        }
+        .mob-icon-menu {
+            // display: flex;
+            // justify-content: end;
+            @include icon ("/assets/mob-icon/mob-icon-menu-white.svg", 35px, 35px, 0px, 0px);
+        }
+        .mob-icon-menu:hover {
+            @include icon ("/assets/mob-icon/mob-icon-menu-pink.svg", 35px, 35px, 0px, 0px);
+        }
     }
 }
 
