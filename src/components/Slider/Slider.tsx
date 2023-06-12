@@ -1,5 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, A11y, EffectFade, Keyboard } from 'swiper'
+import {
+    Navigation,
+    Pagination,
+    A11y,
+    EffectFade,
+    Keyboard,
+    Autoplay,
+} from 'swiper'
 import sliderArray from 'utils/sliderArray'
 
 import 'swiper/css'
@@ -19,7 +26,14 @@ const Slider = ({}: Props) => {
     }
     return (
         <Swiper
-            modules={[Navigation, Pagination, A11y, EffectFade, Keyboard]}
+            modules={[
+                Navigation,
+                Pagination,
+                A11y,
+                EffectFade,
+                Keyboard,
+                Autoplay,
+            ]}
             spaceBetween={50}
             effect={'fade'}
             fadeEffect={{ crossFade: true }}
@@ -32,14 +46,28 @@ const Slider = ({}: Props) => {
             slidesPerView={1}
             pagination={{ clickable: true }}
             // direction={'vertical'}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             className="mySwiper"
         >
-            {sliderArray.map(({ id, image, title }) => (
+            {sliderArray.map(({ id, image, alt, title, tag }) => (
                 <>
-                    <SwiperSlide key={id} className="slide">
-                        <img src={image} alt={title} className="slider-image" />
+                    <SwiperSlide key={id}>
+                        <div className="slide">
+                            <img
+                                src={image}
+                                alt={alt}
+                                className="slider-image"
+                            />
+                            <div className="slider-content">
+                                <div className="slider-tag">{tag}</div>
+                                <h2 className="slider-title">{title}</h2>
+                            </div>
+                        </div>
                     </SwiperSlide>
                 </>
             ))}

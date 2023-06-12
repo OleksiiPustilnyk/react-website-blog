@@ -9,7 +9,7 @@ type Post = {
 const postsArray: Post[] = [
     {
         id: 1,
-        image: '/images/images-posts/car.jpeg',
+        image: '/images/images-posts/post1.jpg',
         tag: 'test',
         title: 'TEST1',
         content:
@@ -17,7 +17,7 @@ const postsArray: Post[] = [
     },
     {
         id: 2,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/post1213.jpg',
         tag: 'test',
         title: 'TEST2',
         content:
@@ -25,7 +25,7 @@ const postsArray: Post[] = [
     },
     {
         id: 3,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/slide1234.jpg',
         tag: 'test',
         title: 'TEST3',
         content:
