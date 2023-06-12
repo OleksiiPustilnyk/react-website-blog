@@ -17,7 +17,7 @@ import './Slider.scss'
 
 type Props = {}
 
-const Slider = ({}: Props) => {
+const Slider = (props: Props) => {
     // const pagination = {
     //     clickable: true,
     //     renderBullet: function (index: number, className: string) {
