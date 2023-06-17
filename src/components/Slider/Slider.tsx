@@ -3,10 +3,10 @@ import {
     Pagination,
     A11y,
     EffectFade,
-    Keyboard,
     Autoplay,
     Thumbs,
     FreeMode,
+    Navigation,
 } from 'swiper'
 import sliderArray from 'utils/sliderArray'
 
@@ -21,7 +21,7 @@ import { useState } from 'react'
 type Props = {}
 
 const Slider = (props: Props) => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null)
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null)
 
     return (
         <>
@@ -30,29 +30,31 @@ const Slider = (props: Props) => {
                     Pagination,
                     A11y,
                     EffectFade,
-                    Keyboard,
                     Autoplay,
                     Thumbs,
                     FreeMode,
+                    Navigation,
                 ]}
                 spaceBetween={10}
+                centeredSlides={true}
+                rewind={true}
                 effect={'fade'}
                 fadeEffect={{ crossFade: true }}
                 autoHeight={true}
                 speed={800}
                 loop={true}
-                thumbs={{ swiper: thumbsSwiper }}
-                keyboard={{
-                    enabled: true,
+                thumbs={{
+                    swiper:
+                        thumbsSwiper && !thumbsSwiper.destroyed
+                            ? thumbsSwiper
+                            : null,
                 }}
                 slidesPerView={1}
-                // pagination={{ clickable: true }}
+                pagination={{ clickable: true }}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
                 }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 className="mySwiper2"
             >
                 {sliderArray.map(({ id, image, alt, title, tag }) => (
@@ -66,7 +68,7 @@ const Slider = (props: Props) => {
                                 />
                                 <div className="slider-content">
                                     <div className="slider-tag">{tag}</div>
-                                    <h2 className="slider-title">{title}</h2>
+                                    <div className="slider-title">{title}</div>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -74,24 +76,25 @@ const Slider = (props: Props) => {
                 ))}
             </Swiper>
             <Swiper
-                onSwiper={() => setThumbsSwiper}
+                onSwiper={setThumbsSwiper}
                 loop={true}
-                spaceBetween={10}
+                spaceBetween={5}
                 slidesPerView={4}
                 freeMode={true}
                 watchSlidesProgress={true}
-                modules={[Thumbs, FreeMode]}
+                modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper"
             >
-                {sliderArray.map(({ id, image, alt }) => (
+                {sliderArray.map(({ id, title, tag }) => (
                     <>
                         <SwiperSlide key={id}>
-                            <div className="slide">
-                                <img
-                                    src={image}
-                                    alt={alt}
-                                    className="slider-image"
-                                />
+                            <div className="slide-mini">
+                                <div className="slider-content-mini">
+                                    <div className="slider-tag-mini">{tag}</div>
+                                    <div className="slider-title-mini">
+                                        {title}
+                                    </div>
+                                </div>
                             </div>
                         </SwiperSlide>
                     </>

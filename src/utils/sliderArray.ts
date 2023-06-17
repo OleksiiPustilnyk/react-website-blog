@@ -4,7 +4,6 @@ type Slide = {
     alt: string
     title: string
     tag: string
-    titleSlide: string
 }
 
 const sliderArray: Slide[] = [
@@ -14,7 +13,6 @@ const sliderArray: Slide[] = [
         alt: 'image-slide1',
         title: 'Lorem ipsum dolor sit amet.',
         tag: 'test',
-        titleSlide: 'test',
     },
     {
         id: 2,
@@ -22,7 +20,6 @@ const sliderArray: Slide[] = [
         alt: 'image-slide2',
         title: 'Lorem ipsum dolor sit.',
         tag: 'test',
-        titleSlide: 'test',
     },
     {
         id: 3,
@@ -30,7 +27,6 @@ const sliderArray: Slide[] = [
         alt: 'image-slide3',
         title: 'Lorem ipsum dolor sit amet consectetur.',
         tag: 'test',
-        titleSlide: 'test',
     },
     {
         id: 4,
@@ -38,7 +34,6 @@ const sliderArray: Slide[] = [
         alt: 'image-slide4',
         title: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
         tag: 'test',
-        titleSlide: 'test',
     },
 ]
 

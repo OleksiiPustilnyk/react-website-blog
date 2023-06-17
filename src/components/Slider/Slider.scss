@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 .slider-title:hover {
-    background-color: #ee6059;
+    color: #ee6059;
 }
 
 .slider-tag {
@@ -54,4 +54,40 @@
 }
 .slider-tag:hover {
     background-color: #1E2123;
+}
+.slider-image-mini {
+    width: 100%;
+    object-fit: cover;
+    // height: calc(100vh - 70px);
+}
+.mySwiper {
+    bottom: 190px;
+}
+.slide-mini {
+    width: 300px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .25);
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+.slide-mini:active {
+    background-color: rgba(0, 0, 0, .35);
+}
+.slider-content-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-tag-mini {
+    color: white;
+    @include font-montserrat (400, 18px);
+    margin-bottom: 10px;
+}
+.slider-title-mini {
+    color: white;
+    @include font-montserrat (700, 22px);
+    text-align: center;
 }
