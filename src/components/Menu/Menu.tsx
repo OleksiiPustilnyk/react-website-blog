@@ -1,4 +1,5 @@
-import Favorites from 'components/Favorites/Favorites'
+import FavoritesNum from 'components/FavoritesNum/FavoritesNum'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -9,34 +10,33 @@ const Menu = (props: Props) => {
                 <nav>
                     <ul className="menu-list">
                         <li>
-                            <a href="Home">Home</a>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li className="dropdown">
                             <div className="menu-dropdown">
-                                <a href="Categories">
+                                <a>
                                     Categories
                                     <span className="icon-arrow"></span>
                                 </a>
                             </div>
                             <div className="dropdown-content">
-                                <a href="Style">Style #1</a>
-                                <a href="Music">Music #2</a>
-                                <a href="Travel">Travel #3</a>
-                                <a href="Cars">Cars #4</a>
+                                <NavLink to="/style">Style #1</NavLink>
+                                <NavLink to="/music">Music #2</NavLink>
+                                <NavLink to="/cars">Cars #3</NavLink>
                             </div>
                         </li>
                         <li>
-                            <a href="About">About</a>
+                            <NavLink to="/about">About</NavLink>
                         </li>
                         <li>
-                            <a href="Contact">Contact</a>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                         <li>
                             <div className="favorites">
-                                <a href="Favorites">
+                                <NavLink to={'/favorites'}>
                                     Favorites
-                                    <Favorites />
-                                </a>
+                                    <FavoritesNum />
+                                </NavLink>
                             </div>
                         </li>
                     </ul>
