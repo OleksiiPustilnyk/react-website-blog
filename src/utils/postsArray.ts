@@ -79,30 +79,6 @@ const postsArray: Post[] = [
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
-    {
-        id: 10,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
-        tag: 'test',
-        title: 'TEST10',
-        content:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
-    },
-    {
-        id: 11,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
-        tag: 'test',
-        title: 'TEST11',
-        content:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
-    },
-    {
-        id: 12,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
-        tag: 'test',
-        title: 'TEST12',
-        content:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
-    },
 ]
 
 export default postsArray

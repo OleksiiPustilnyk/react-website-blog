@@ -1,5 +1,5 @@
 type Props = {}
-const Favorites = (props: Props) => {
+const FavoritesNum = (props: Props) => {
     return (
         <>
             <span className="icon-like"></span>
@@ -7,4 +7,4 @@ const Favorites = (props: Props) => {
         </>
     )
 }
-export default Favorites
+export default FavoritesNum
