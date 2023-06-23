@@ -35,10 +35,12 @@
         text-align: center;
         margin-left: 25px;
         color: white;
-        background-color: #ee6059;
+        background-color: #1E2123;
+        border: gray 1px solid;
     }
     .post-tag:hover {
-        background-color: #1E2123;
+        background-color: #ee6059;
+        border: none;
     }
     .post-like {
         background-image: url("/assets/icon/icon-like.svg");
