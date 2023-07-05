@@ -76,14 +76,21 @@
         position: relative;
     }
     .author-avatar {
-        margin-left: 25px;
+        margin-right: 15px;
         cursor: pointer;
+    }
+    .author-name {
+        color: white;
+        text-decoration: none;
+    }
+    .authot-navlink {
+        display: flex;
     }
     .author-space {
         position: relative;
     }
     .author-icon {
-        @include icon ("/assets/icon/icon-s.svg", 15px, 20px, -15px, 35px)
+        @include icon ("/assets/icon/icon-s.svg", 15px, 20px, 15px, 20px)
     }
     .icon-quotes {
         @include icon ("/assets/icon/icon-quotes2.svg", 30px, 30px, 30px, 5px)
