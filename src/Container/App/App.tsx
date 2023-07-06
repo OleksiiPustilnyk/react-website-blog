@@ -1,13 +1,14 @@
 import Header from 'Container/Header/Header'
+
 import AboutPage from 'Pages/About/AboutPage'
 import CategoriesCarsPage from 'Pages/CategoriesCars/CategoriesCarsPage'
 import CategoriesMusicPage from 'Pages/CategoriesMusic/CategoriesMusicPage'
 import CategoriesStylePage from 'Pages/CategoriesStyle/CategoriesStylePage'
 import ContactPage from 'Pages/Contact/ContactPage'
 import AuthorPage from 'Pages/Author/AuthorPage'
-
 import FavoritesPage from 'Pages/Favorites/FavoritesPage'
 import Home from 'Pages/Home/Home'
+
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {

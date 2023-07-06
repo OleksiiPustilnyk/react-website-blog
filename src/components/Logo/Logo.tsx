@@ -1,5 +1,6 @@
 import logo from 'assets/logo/Street.Blog(5).svg'
 import mobLogo from 'assets/mob-logo/mob-Street.Blog.svg'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -7,9 +8,9 @@ const Logo = (props: Props) => {
     return (
         <>
             <div className="logo">
-                <a href="logo-link">
+                <NavLink to="/">
                     <img src={logo} alt="Blog-logo" />
-                </a>
+                </NavLink>
             </div>
             <div className="mob-logo">
                 <a href="logo-link">
