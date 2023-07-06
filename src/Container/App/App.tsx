@@ -4,6 +4,7 @@ import CategoriesCarsPage from 'Pages/CategoriesCars/CategoriesCarsPage'
 import CategoriesMusicPage from 'Pages/CategoriesMusic/CategoriesMusicPage'
 import CategoriesStylePage from 'Pages/CategoriesStyle/CategoriesStylePage'
 import ContactPage from 'Pages/Contact/ContactPage'
+import AuthorPage from 'Pages/Author/AuthorPage'
 
 import FavoritesPage from 'Pages/Favorites/FavoritesPage'
 import Home from 'Pages/Home/Home'
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/cars" element={<CategoriesCarsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/favorites" element={<FavoritesPage />} />
+                <Route path="/author" element={<AuthorPage />} />
             </Routes>
         </>
     )
