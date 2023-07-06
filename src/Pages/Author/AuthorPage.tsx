@@ -1,5 +1,5 @@
 import { Avatar, Container, Grid, Typography } from '@mui/material'
-import avatar from 'assets/avatar/avatar-author.png'
+import avatar from 'assets/avatar/donald-glover.jpeg'
 import PostListItem from 'components/Posts/PostListItem'
 import postsArray from 'utils/postsArray'
 

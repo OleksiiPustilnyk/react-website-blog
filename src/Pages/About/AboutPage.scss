@@ -1,0 +1,5 @@
+@import "/src/assets/style/veriables";
+
+.about-title {
+    @include font-montserrat (900, 36px);
+}

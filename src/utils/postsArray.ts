@@ -9,7 +9,7 @@ type Post = {
 const postsArray: Post[] = [
     {
         id: 1,
-        image: '/images/images-posts/post1.jpg',
+        image: '/images/images-posts/tattoo.jpeg',
         tag: 'style',
         title: 'TEST1',
         content:
@@ -17,7 +17,7 @@ const postsArray: Post[] = [
     },
     {
         id: 2,
-        image: '/images/images-posts/post1213.jpg',
+        image: '/images/images-posts/miata.jpeg',
         tag: 'cars',
         title: 'TEST2',
         content:
@@ -25,7 +25,7 @@ const postsArray: Post[] = [
     },
     {
         id: 3,
-        image: '/images/images-posts/slide1234.jpg',
+        image: '/images/images-posts/festivals.jpeg',
         tag: 'music',
         title: 'TEST3',
         content:
@@ -33,7 +33,7 @@ const postsArray: Post[] = [
     },
     {
         id: 4,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/rocky.jpeg',
         tag: 'cars',
         title: 'TEST4',
         content:
@@ -41,7 +41,7 @@ const postsArray: Post[] = [
     },
     {
         id: 5,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/stussy.jpeg',
         tag: 'style',
         title: 'TEST5',
         content:
@@ -49,7 +49,7 @@ const postsArray: Post[] = [
     },
     {
         id: 6,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/miller.jpeg',
         tag: 'music',
         title: 'TEST6',
         content:
@@ -57,7 +57,7 @@ const postsArray: Post[] = [
     },
     {
         id: 7,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/graff.jpeg',
         tag: 'style',
         title: 'TEST7',
         content:
@@ -65,7 +65,7 @@ const postsArray: Post[] = [
     },
     {
         id: 8,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/boyz.jpeg',
         tag: 'music',
         title: 'TEST8',
         content:
@@ -73,7 +73,7 @@ const postsArray: Post[] = [
     },
     {
         id: 9,
-        image: '/images/images-posts/image_street_style_summer.jpeg',
+        image: '/images/images-posts/rwb.jpeg',
         tag: 'cars',
         title: 'TEST9',
         content:
