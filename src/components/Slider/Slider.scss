@@ -72,6 +72,9 @@
     margin: auto;
     cursor: pointer;
 }
+.slide-mini:hover {
+    background-color: rgba(0, 0, 0, .35);
+} 
 .slide-mini:active {
     background-color: rgba(0, 0, 0, .35);
 }
