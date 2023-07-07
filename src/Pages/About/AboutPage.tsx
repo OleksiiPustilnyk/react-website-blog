@@ -7,7 +7,7 @@ type Props = {}
 
 const AboutPage = (props: Props) => {
     return (
-        <Container maxWidth="xl" sx={{ padding: '40px 0' }}>
+        <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <Container maxWidth="sm" className="about-list">
                 <Typography
                     component="h2"
@@ -93,7 +93,6 @@ const AboutPage = (props: Props) => {
                         efficitur mauris nec tincidunt. cursus leo ultricies
                         magna faucibus id.
                     </p>
-                    <p></p>
                 </CardContent>
             </Card>
         </Container>
