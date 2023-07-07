@@ -1,0 +1,23 @@
+@import "/src/assets/style/veriables";
+
+.contact-form-field {
+    margin-bottom: 20px;
+}
+
+.contact-form-input {
+    width: 100%;
+    background-color:  #25292b;
+    color: white;
+    border: none;
+    padding: 10px;
+    @include font-open_sans (400, 14px);
+}
+
+.contact-form-btn {
+    width: 100%;
+    background-color: #ee6059;
+    color: white;
+    border: none;
+    padding: 10px;
+    @include font-montserrat (600, 18px);
+}
