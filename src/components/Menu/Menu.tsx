@@ -14,10 +14,10 @@ const Menu = (props: Props) => {
                         </li>
                         <li className="dropdown">
                             <div className="menu-dropdown">
-                                <a>
+                                <NavLink to=" ">
                                     Categories
                                     <span className="icon-arrow"></span>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="dropdown-content">
                                 <NavLink to="/style">Style #1</NavLink>
@@ -33,7 +33,7 @@ const Menu = (props: Props) => {
                         </li>
                         <li>
                             <div className="favorites">
-                                <NavLink to={'/favorites'}>
+                                <NavLink to="/favorites">
                                     Favorites
                                     <FavoritesNum />
                                 </NavLink>
