@@ -19,6 +19,9 @@ const AboutPage = (props: Props) => {
                 className="about-title"
             >
                 About Us
+                <div className="icon-for-title">
+                    <span className="icon-xx"></span>
+                </div>
             </Typography>
         </Container>
     )
