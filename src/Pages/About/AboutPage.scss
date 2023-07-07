@@ -1,20 +1,82 @@
 @import "/src/assets/style/veriables";
 
-.about-title {
-    @include font-montserrat (900, 36px);
-    width: auto;
+
+.about-list {
+    .about-title {
+        @include font-montserrat (900, 36px);
+        width: auto;
+    }
+    
+    .icon-for-title {
+        display: flex;
+        justify-content: center;
+        // position: relative;
+        margin-top: 10px;
+    }
+    .icon-xx {
+        background-image: url("/assets/icon/icon-xx.svg");
+        // position: absolute;
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 35px;
+    }
 }
 
-.icon-for-title {
+
+.post-img {
+    // text-align: center;
+    margin-bottom: 25px;
+    width: auto;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    // position: relative;
-    margin-top: 10px;
+    width: 100%;
+    height: auto;
 }
-.icon-xx {
-    background-image: url("/assets/icon/icon-xx.svg");
-    // position: absolute;
-    background-repeat: no-repeat;
-    height: 15px;
-    width: 35px;
+.imagePage {
+    width: 100%;
+    height: auto;
 }
+.post-quote {
+    background-color:  #25292b;
+}
+
+.about-quote {
+    .about-quote-icon {
+        display: flex;
+        justify-content: center;
+        // position: relative;
+        margin-top: 10px;
+    }
+    .border-icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-color: #ee6059;
+        position: relative;
+        border-radius: 50%;
+    }
+    .icon-quotes-comment {
+        @include icon ("/assets/icon/icon-quotes-comment.svg", 20px, 20px, 10px, 10px);
+    }
+
+    .quote {
+        // margin-top: 30px;
+        // margin-bottom: 20px;
+        // margin-left: 25px;
+        // margin-right: 25px;
+        cursor: pointer;
+        @include font-montserrat (700, 20px);
+        color: white;
+    }
+    .quote-author {
+        // margin-left: 25px;
+        // margin-right: 25px;
+        margin-bottom: 10px;
+        @include font-open_sans (400, 16px);
+        color: #9999;
+    }  
+}
+
+
