@@ -1,5 +1,5 @@
 import { Card, CardContent, Avatar, Grid } from '@mui/material'
-import avatar from 'assets/avatar/avatar-author-mini.png'
+import avatar from 'assets/avatar/donald-glover.jpeg'
 
 import './PostListItem.scss'
 import { NavLink } from 'react-router-dom'
