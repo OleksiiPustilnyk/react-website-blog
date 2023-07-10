@@ -106,36 +106,6 @@
         position: absolute;
     }
     
-    .header-links {
-        display: flex;
-    
-    }
-    .border-icon {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-        background-color: #ee6059;
-        position: relative;
-    }
-    
-    .icon-instagram {
-        @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-facebook {
-        @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-twitter {
-        @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-youtube {
-        @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, 10px, 10px);
-    }
-    
-    .border-icon:hover {
-        background-color: #25292b;
-        border: gray 1px solid;
-        cursor: pointer;
-    }
     /* .menu-list:first-child a,
     .menu-list .dropdown:first-child a {
         border-radius: 10px 10px 0 0;

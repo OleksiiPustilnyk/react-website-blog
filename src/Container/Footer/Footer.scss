@@ -1,0 +1,94 @@
+@import "/src/assets/style/veriables";
+
+.subscribe {
+    background-color: #1e2123;
+    padding: 70px 0 70px 0;
+    margin-top: 45px;
+    .subscribe-title {
+        @include font-montserrat (900, 20px);
+    }
+    .subscribe-text {
+        @include font-montserrat (400, 14px);
+        margin-bottom: 25px;
+    }
+    .contact-form-field {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .subscribe-btn {
+        background-color: #ee6059;
+        border: none;
+        color: white;
+        padding: 0 35px 0 35px;
+        @include font-montserrat (600, 15px);
+        cursor: pointer;
+    }
+    .subscribe-btn:hover {
+        border: 1px solid white;
+        background-color:  #1e2123;
+    }
+
+    .subscribe-link {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        @include font-montserrat (400, 16px);
+    }
+
+    li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .subscribe-link-icon {
+        position: relative;
+    }
+    .subscribe-link-icon a:hover { 
+        color: #ee6059
+    }
+    .icon-facebook {
+        @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, -25px, 0);
+    }
+    .subscribe-link-icon:hover .icon-facebook{
+        background-image: url("/assets/icon/icon-facebook-pink.svg")
+    }
+    .icon-twitter {
+        @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, -25px, 0);
+    }
+    .subscribe-link-icon:hover .icon-twitter {
+        background-image: url("/assets/icon/icon-twitter-pink.svg");
+    }
+    .icon-instagram {
+        @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, -25px, 0);
+    }
+    .subscribe-link-icon:hover .icon-instagram {
+        background-image: url("/assets/icon/icon-instagram-pink.svg");
+    }
+    .icon-youtube {
+        @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, -25px, 0);
+    }
+    .subscribe-link-icon:hover .icon-youtube {
+        background-image: url("/assets/icon/icon-youtube-pink.svg");
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    @include font-open_sans (400, 13px);
+    background-color: #25292b;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: #ee6059;
+}

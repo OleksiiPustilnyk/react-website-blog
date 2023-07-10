@@ -10,6 +10,7 @@ import FavoritesPage from 'Pages/Favorites/FavoritesPage'
 import Home from 'Pages/Home/Home'
 
 import { Route, Routes } from 'react-router-dom'
+import Footer from 'Container/Footer/Footer'
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path="/favorites" element={<FavoritesPage />} />
                 <Route path="/author" element={<AuthorPage />} />
             </Routes>
+            <Footer />
         </>
     )
 }
