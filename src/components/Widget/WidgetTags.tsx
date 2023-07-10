@@ -36,7 +36,7 @@ const WidgetTags = (props: Props) => {
                         <div className="post-tag-item">tattoo</div>
                         <div className="post-tag-item">rap</div>
                         <div className="post-tag-item">famous</div>
-                        <div className="post-tag-item">lifestyle</div>
+                        <div className="post-tag-item">style</div>
                         <div className="post-tag-item">games</div>
                         <div className="post-tag-item">RWB</div>
                     </div>

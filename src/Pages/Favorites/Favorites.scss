@@ -1,0 +1,9 @@
+@import "/src/assets/style/veriables";
+
+.favorites-paragraph {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    @include font-open_sans (400, 17px);
+    color: #9999;
+}
