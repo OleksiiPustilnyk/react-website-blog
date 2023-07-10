@@ -43,12 +43,7 @@ const WidgetLatestPost = (props: Props) => {
                                 </div>
                             </Grid>
                             <div className="mini-post-num">1</div>
-                            <Grid
-                                item
-                                md={7}
-                                // alignContent="center"
-                                className="mini-post-content"
-                            >
+                            <Grid item md={7} className="mini-post-content">
                                 <div className="mini-post-title">
                                     Tattoo ideas for men's
                                 </div>
@@ -76,12 +71,7 @@ const WidgetLatestPost = (props: Props) => {
                                 </div>
                             </Grid>
                             <div className="mini-post-num">2</div>
-                            <Grid
-                                item
-                                md={7}
-                                // alignContent="center"
-                                className="mini-post-content"
-                            >
+                            <Grid item md={7} className="mini-post-content">
                                 <div className="mini-post-title">
                                     A$ap Rocky in NFS Unbound
                                 </div>
@@ -109,12 +99,7 @@ const WidgetLatestPost = (props: Props) => {
                                 </div>
                             </Grid>
                             <div className="mini-post-num">3</div>
-                            <Grid
-                                item
-                                md={7}
-                                // alignContent="center"
-                                className="mini-post-content"
-                            >
+                            <Grid item md={7} className="mini-post-content">
                                 <div className="mini-post-title">
                                     Top 10 best festival
                                 </div>
@@ -142,12 +127,7 @@ const WidgetLatestPost = (props: Props) => {
                                 </div>
                             </Grid>
                             <div className="mini-post-num">4</div>
-                            <Grid
-                                item
-                                md={7}
-                                // alignContent="center"
-                                className="mini-post-content"
-                            >
+                            <Grid item md={7} className="mini-post-content">
                                 <div className="mini-post-title">
                                     Mac Miller and his last album
                                 </div>
