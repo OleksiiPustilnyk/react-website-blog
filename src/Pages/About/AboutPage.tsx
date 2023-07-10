@@ -1,6 +1,7 @@
 import { Card, CardContent, Container, Grid, Typography } from '@mui/material'
 import imageAboutUs from 'assets/images/AboutUs.png'
 import WidgetAuthor from 'components/Widget/WidgetAuthor'
+import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 
 import './AboutPage.scss'
 
@@ -113,6 +114,7 @@ const AboutPage = (props: Props) => {
                 </Grid>
                 <Grid item xs={3.5}>
                     <WidgetAuthor />
+                    <WidgetLatestPost />
                 </Grid>
             </Grid>
         </Container>

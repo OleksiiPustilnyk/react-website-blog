@@ -7,7 +7,13 @@ type Props = {}
 
 const WidgetAuthor = (props: Props) => {
     return (
-        <Card sx={{ borderRadius: '20px', boxShadow: 'none' }}>
+        <Card
+            sx={{
+                borderRadius: '20px',
+                boxShadow: 'none',
+                marginBottom: '20px',
+            }}
+        >
             <CardContent className="widget" sx={{ paddingTop: '15px' }}>
                 <Container maxWidth="sm" className="author-list">
                     <Avatar
