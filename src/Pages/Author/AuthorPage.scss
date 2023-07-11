@@ -23,56 +23,5 @@
     .author-description {
         @include font-montserrat (400, 15px);
     }
-    .social-list {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-
-    }
-    .social-border-icon {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-        position: relative;
-    }
-    li {
-        list-style-type: none;
-    }
-    .social-color-bg-facebook {
-        background-color: #3b5998;
-    }
-    .social-color-bg-instagram {
-        background-color: #c32aa3;
-    }
-    .social-color-bg-twitter {
-        background-color: #1dcaff;
-    }
-    .social-color-bg-youtube {
-        background-color: #e52d27;
-    }
-    .social-color-bg-pinterest {
-        background-color: #bd081c;
-    }
     
-    .icon-instagram {
-        @include icon ("/assets/icon/icon-instagram.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-facebook {
-        @include icon ("/assets/icon/icon-facebook.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-twitter {
-        @include icon ("/assets/icon/icon-twitter.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-youtube {
-        @include icon ("/assets/icon/icon-youtube.svg", 20px, 20px, 10px, 10px);
-    }
-    .icon-pinterest {
-        @include icon ("/assets/icon/icon-pinterest.svg", 20px, 20px, 10px, 10px);
-    }
-    
-    .social-border-icon:hover {
-        background-color: #25292b;
-        border: gray 1px solid;
-        cursor: pointer;
-    }
 }

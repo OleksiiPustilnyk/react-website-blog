@@ -19,7 +19,7 @@ const sliderArray: Slide[] = [
     {
         id: 2,
         image: '/images/images-slider/image-slide7.jpg',
-        alt: 'image-slide3',
+        alt: 'image-slide2',
         title: 'StreetWear',
         link: '/post/StreetWear',
         tag: 'style',
@@ -27,7 +27,7 @@ const sliderArray: Slide[] = [
     {
         id: 3,
         image: '/images/images-slider/image-slide12.jpg',
-        alt: 'image-slide2',
+        alt: 'image-slide3',
         title: 'Classic Japan cars',
         link: '/post/Classic-Japan-cars',
         tag: 'cars',
