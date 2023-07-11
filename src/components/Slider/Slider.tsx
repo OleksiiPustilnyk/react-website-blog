@@ -17,6 +17,7 @@ import 'swiper/css/free-mode'
 
 import './Slider.scss'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -57,7 +58,7 @@ const Slider = (props: Props) => {
                 }}
                 className="mySwiper2"
             >
-                {sliderArray.map(({ id, image, alt, title, tag }) => (
+                {sliderArray.map(({ id, image, alt, title, link, tag }) => (
                     <>
                         <SwiperSlide key={id}>
                             <div className="slide">
@@ -68,7 +69,9 @@ const Slider = (props: Props) => {
                                 />
                                 <div className="slider-content">
                                     <div className="slider-tag">{tag}</div>
-                                    <div className="slider-title">{title}</div>
+                                    <NavLink to={link} className="slider-title">
+                                        {title}
+                                    </NavLink>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -15,13 +15,13 @@ const PostListItem = ({ image, tag, title, link, content }: Props) => {
     return (
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
-                <div className="post-img">
+                <NavLink to={link} className="post-img">
                     <div className="block">
                         <div className="image">
                             <img src={image} alt="" />
                         </div>
                     </div>
-                </div>
+                </NavLink>
                 <Grid
                     container
                     justifyContent={'space-between'}

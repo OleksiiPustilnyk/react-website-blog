@@ -30,6 +30,7 @@
     .post-tag {
         width: 50px;
         height: 18px;
+        margin-bottom: 20px;
         @include font-montserrat (400, 13px);
         cursor: pointer;
         text-align: center;
@@ -51,6 +52,7 @@
     }
     
     .post-title {
+        text-decoration: none;
         width: max-content;
         margin-top: 30px;
         margin-bottom: 20px;
