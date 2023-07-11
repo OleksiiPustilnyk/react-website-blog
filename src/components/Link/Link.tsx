@@ -1,3 +1,5 @@
+import './Link.scss'
+
 type Props = {}
 
 const Link = (props: Props) => {
