@@ -3,6 +3,7 @@ type Post = {
     image: string
     tag: string
     title: string
+    link: string
     content: string
 }
 
@@ -12,6 +13,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/tattoo.jpeg',
         tag: 'style',
         title: "Tattoo ideas for men's",
+        link: '/post/Tattoo-ideas-for-mens',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -20,6 +22,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/miata.jpeg',
         tag: 'cars',
         title: 'Classic Japan cars',
+        link: '/post/Classic-Japan-cars',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -28,6 +31,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/festivals.jpeg',
         tag: 'music',
         title: 'Top 10 best festival',
+        link: '/post/Top-10-best-festival',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -36,6 +40,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/rocky.jpeg',
         tag: 'cars',
         title: 'A$ap Rocky in NFS Unbound',
+        link: '/post/Asap-Rocky-in-NFS-Unbound',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -44,6 +49,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/stussy.jpeg',
         tag: 'style',
         title: 'StreetWear',
+        link: '/post/StreetWear',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -52,6 +58,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/miller.jpeg',
         tag: 'music',
         title: 'Mac Miller and his last album',
+        link: '/post/Mac-Miller-and-his-last-album',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -60,6 +67,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/graff.jpeg',
         tag: 'style',
         title: 'Graffiti: street art or crime?',
+        link: '/post/Gtaffiti-street-art-or-crime?',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -68,6 +76,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/boyz.jpeg',
         tag: 'music',
         title: "Best Rapper in 90's",
+        link: '/post/Best-Rapper-in-90',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
@@ -76,6 +85,7 @@ const postsArray: Post[] = [
         image: '/images/images-posts/rwb.jpeg',
         tag: 'cars',
         title: 'RWB - RAUH-Welt Begriff',
+        link: '/post/RWB-RAUH-Welt-Begriff',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },

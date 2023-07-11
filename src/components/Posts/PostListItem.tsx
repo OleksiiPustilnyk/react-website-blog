@@ -1,26 +1,28 @@
 import { Card, CardContent, Avatar, Grid } from '@mui/material'
-import avatar from 'assets/avatar/donald-glover.jpeg'
+// import avatar from 'assets/avatar/donald-glover.jpeg'
 
 import './PostListItem.scss'
 import { NavLink } from 'react-router-dom'
+import AuthorBlock from 'components/AuthorBlock/AuthorBlock'
 
 type Props = {
     image: string
     tag: string
     title: string
+    link: string
     content: string
 }
-const PostListItem = ({ image, tag, title, content }: Props) => {
+const PostListItem = ({ image, tag, title, link, content }: Props) => {
     return (
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
-                <div className="post-img">
+                <NavLink to={link} className="post-img">
                     <div className="block">
                         <div className="image">
                             <img src={image} alt="" />
                         </div>
                     </div>
-                </div>
+                </NavLink>
                 <Grid
                     container
                     justifyContent={'space-between'}
@@ -31,46 +33,11 @@ const PostListItem = ({ image, tag, title, content }: Props) => {
                     </Grid>
                     <Grid item md={0.5} className="post-like"></Grid>
                 </Grid>
-                <div className="post-title">{title}</div>
+                <NavLink to={link} className="post-title">
+                    {title}
+                </NavLink>
                 <p className="post-content">{content}</p>
-                <Grid
-                    container
-                    justifyContent={'space-around'}
-                    className="post-author"
-                >
-                    <NavLink to="/author" className="authot-navlink">
-                        <Grid item md={5}>
-                            {/* <div className="icon-quotes"></div> */}
-                            <Avatar
-                                alt="Donald Glover"
-                                src={avatar}
-                                sx={{ width: 50, height: 50 }}
-                                className="author-avatar"
-                            />
-                        </Grid>
-                        <Grid
-                            item
-                            container
-                            md={12}
-                            alignItems="center"
-                            className="author-name"
-                        >
-                            Donald Glover
-                        </Grid>
-                    </NavLink>
-                    <Grid item md={1} className="author-space">
-                        <div className="author-icon"></div>
-                    </Grid>
-                    <Grid
-                        item
-                        container
-                        md={2}
-                        alignItems="center"
-                        className="author-date"
-                    >
-                        05.06.2023
-                    </Grid>
-                </Grid>
+                <AuthorBlock />
             </CardContent>
         </Card>
     )

@@ -1,0 +1,5 @@
+@import "/src/assets/style/veriables";
+
+.post-social-text {
+    @include font-montserrat (900, 20px);
+}

@@ -8,12 +8,13 @@ const PostsList = (props: Props) => {
     return (
         <>
             <Masonry columnsCount={3} gutter="25px">
-                {postsArray.map(({ id, image, tag, title, content }) => (
+                {postsArray.map(({ id, image, tag, title, link, content }) => (
                     <Grid key={id}>
                         <PostListItem
                             image={image}
                             tag={tag}
                             title={title}
+                            link={link}
                             content={content}
                         />
                     </Grid>

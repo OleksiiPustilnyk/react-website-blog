@@ -1,6 +1,7 @@
 import { Card, CardContent, Container, Grid, Typography } from '@mui/material'
 
 import './Widget.scss'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -33,20 +34,26 @@ const WidgetLatestPost = (props: Props) => {
                     <div className="last-post-list">
                         <Grid container className="mini-post">
                             <Grid item md={4} className="post-img">
-                                <div className="block">
+                                <NavLink
+                                    to="/post/Tattoo-ideas-for-mens"
+                                    className="block"
+                                >
                                     <div className="image">
                                         <img
                                             src="/images/images-posts/tattoo.jpeg"
                                             alt="mini-post-img"
                                         />
                                     </div>
-                                </div>
+                                </NavLink>
                             </Grid>
                             <div className="mini-post-num">1</div>
                             <Grid item md={7} className="mini-post-content">
-                                <div className="mini-post-title">
+                                <NavLink
+                                    to="/post/Tattoo-ideas-for-mens"
+                                    className="mini-post-title"
+                                >
                                     Tattoo ideas for men's
-                                </div>
+                                </NavLink>
                                 <Grid container className="mini-post-data">
                                     <Grid
                                         item
@@ -61,20 +68,26 @@ const WidgetLatestPost = (props: Props) => {
                         </Grid>
                         <Grid container className="mini-post">
                             <Grid item md={4} className="post-img">
-                                <div className="block">
+                                <NavLink
+                                    to="/post/Asap-Rocky-in-NFS-Unbound"
+                                    className="block"
+                                >
                                     <div className="image">
                                         <img
                                             src="/images/images-posts/rocky.jpeg"
                                             alt="mini-post-img"
                                         />
                                     </div>
-                                </div>
+                                </NavLink>
                             </Grid>
                             <div className="mini-post-num">2</div>
                             <Grid item md={7} className="mini-post-content">
-                                <div className="mini-post-title">
+                                <NavLink
+                                    to="/post/Asap-Rocky-in-NFS-Unbound"
+                                    className="mini-post-title"
+                                >
                                     A$ap Rocky in NFS Unbound
-                                </div>
+                                </NavLink>
                                 <Grid container className="mini-post-data">
                                     <Grid
                                         item
@@ -89,20 +102,26 @@ const WidgetLatestPost = (props: Props) => {
                         </Grid>
                         <Grid container className="mini-post">
                             <Grid item md={4} className="post-img">
-                                <div className="block">
+                                <NavLink
+                                    to="/post/Top-10-best-festival"
+                                    className="block"
+                                >
                                     <div className="image">
                                         <img
                                             src="/images/images-posts/festivals.jpeg"
                                             alt="mini-post-img"
                                         />
                                     </div>
-                                </div>
+                                </NavLink>
                             </Grid>
                             <div className="mini-post-num">3</div>
                             <Grid item md={7} className="mini-post-content">
-                                <div className="mini-post-title">
+                                <NavLink
+                                    to="/post/Top-10-best-festival"
+                                    className="mini-post-title"
+                                >
                                     Top 10 best festival
-                                </div>
+                                </NavLink>
                                 <Grid container className="mini-post-data">
                                     <Grid
                                         item
@@ -117,20 +136,26 @@ const WidgetLatestPost = (props: Props) => {
                         </Grid>
                         <Grid container className="mini-post">
                             <Grid item md={4} className="post-img">
-                                <div className="block">
+                                <NavLink
+                                    to="/post/Mac-Miller-and-his-last-album"
+                                    className="block"
+                                >
                                     <div className="image">
                                         <img
                                             src="/images/images-posts/miller.jpeg"
                                             alt="mini-post-img"
                                         />
                                     </div>
-                                </div>
+                                </NavLink>
                             </Grid>
                             <div className="mini-post-num">4</div>
                             <Grid item md={7} className="mini-post-content">
-                                <div className="mini-post-title">
+                                <NavLink
+                                    to="/post/Mac-Miller-and-his-last-album"
+                                    className="mini-post-title"
+                                >
                                     Mac Miller and his last album
-                                </div>
+                                </NavLink>
                                 <Grid container className="mini-post-data">
                                     <Grid
                                         item
