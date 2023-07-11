@@ -11,7 +11,7 @@ import SocialList from 'components/SocialList/SocialList'
 
 type Props = {}
 
-const PostTattooIdeasForMens = (props: Props) => {
+const PostStreetWear = (props: Props) => {
     return (
         <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <Grid container spacing={2}>
@@ -200,4 +200,4 @@ const PostTattooIdeasForMens = (props: Props) => {
         </Container>
     )
 }
-export default PostTattooIdeasForMens
+export default PostStreetWear
