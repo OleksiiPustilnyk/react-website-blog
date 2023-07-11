@@ -8,9 +8,10 @@ type Props = {
     image: string
     tag: string
     title: string
+    link: string
     content: string
 }
-const PostListItem = ({ image, tag, title, content }: Props) => {
+const PostListItem = ({ image, tag, title, link, content }: Props) => {
     return (
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
@@ -31,7 +32,9 @@ const PostListItem = ({ image, tag, title, content }: Props) => {
                     </Grid>
                     <Grid item md={0.5} className="post-like"></Grid>
                 </Grid>
-                <div className="post-title">{title}</div>
+                <NavLink to={link} className="post-title">
+                    {title}
+                </NavLink>
                 <p className="post-content">{content}</p>
                 <Grid
                     container
