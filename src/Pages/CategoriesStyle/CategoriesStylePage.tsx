@@ -4,6 +4,9 @@ import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import './Categories.scss'
+import Masonry from 'react-responsive-masonry'
+import postsArray from 'utils/postsArray'
+import PostListItem from 'components/Posts/PostListItem'
 
 type Props = {}
 
@@ -39,7 +42,25 @@ const CategoriesStylePage = (props: Props) => {
                 </Grid>
             </Grid>
             <Grid container spacing={2}>
-                <Grid item xs={8.5}></Grid>
+                <Grid item xs={8.5}>
+                    <>
+                        <Masonry columnsCount={3} gutter="25px">
+                            {postsArray.map(
+                                ({ id, image, tag, title, link, content }) => (
+                                    <Grid key={id}>
+                                        <PostListItem
+                                            image={image}
+                                            tag={tag}
+                                            title={title}
+                                            link={link}
+                                            content={content}
+                                        />
+                                    </Grid>
+                                )
+                            )}
+                        </Masonry>
+                    </>
+                </Grid>
                 <Grid item xs={3.5}>
                     <WidgetLatestPost />
                     <WidgetInstagram />
