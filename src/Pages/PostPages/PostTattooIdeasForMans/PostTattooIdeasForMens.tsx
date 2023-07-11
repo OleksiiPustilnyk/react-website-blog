@@ -112,14 +112,14 @@ const PostTattooIdeasForMens = (props: Props) => {
                                                 }}
                                                 className="quote"
                                             >
-                                                "Blogs are not literature. It's
-                                                like graffiti with commas."
+                                                "My body is my journal, and my
+                                                tattoos are my story."
                                             </Typography>
                                             <Typography
                                                 align="center"
                                                 className="quote-author"
                                             >
-                                                Kendrick Lamar
+                                                Johnny Depp
                                             </Typography>
                                         </Container>
                                     </CardContent>
