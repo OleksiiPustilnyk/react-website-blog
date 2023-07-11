@@ -1,4 +1,4 @@
-import { Card, CardContent, Avatar, Grid } from '@mui/material'
+import { Card, CardContent, Grid } from '@mui/material'
 // import avatar from 'assets/avatar/donald-glover.jpeg'
 
 import './PostListItem.scss'
