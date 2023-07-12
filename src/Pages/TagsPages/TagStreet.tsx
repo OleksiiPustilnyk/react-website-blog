@@ -4,7 +4,7 @@ import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import Masonry from 'react-responsive-masonry'
-import postsStyleArray from 'utils/postsStyleArray'
+import tagStreetArray from 'utils/tagStreetArray'
 import PostListItem from 'components/Posts/PostListItem'
 
 type Props = {}
@@ -44,7 +44,7 @@ const TagStreet = (props: Props) => {
                 <Grid item xs={8.5}>
                     <>
                         <Masonry columnsCount={2} gutter="25px">
-                            {postsStyleArray.map(
+                            {tagStreetArray.map(
                                 ({ id, image, tag, title, link, content }) => (
                                     <Grid key={id}>
                                         <PostListItem

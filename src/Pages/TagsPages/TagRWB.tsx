@@ -4,7 +4,7 @@ import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import Masonry from 'react-responsive-masonry'
-import postsStyleArray from 'utils/postsStyleArray'
+import tagRWBArray from 'utils/tagRWBArray'
 import PostListItem from 'components/Posts/PostListItem'
 
 type Props = {}
@@ -44,7 +44,7 @@ const TagRWB = (props: Props) => {
                 <Grid item xs={8.5}>
                     <>
                         <Masonry columnsCount={2} gutter="25px">
-                            {postsStyleArray.map(
+                            {tagRWBArray.map(
                                 ({ id, image, tag, title, link, content }) => (
                                     <Grid key={id}>
                                         <PostListItem
