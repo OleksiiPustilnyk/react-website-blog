@@ -10,28 +10,28 @@ type Post = {
 const postsArray: Post[] = [
     {
         id: 1,
-        image: '/images/images-posts/tattoo.jpeg',
-        tag: 'style',
-        title: "Tattoo ideas for men's",
-        link: '/post/Tattoo-ideas-for-mens',
+        image: '/images/images-posts/festivals.jpeg',
+        tag: 'music',
+        title: 'Top 10 best festival',
+        link: '/post/Top-10-best-festival',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
         id: 2,
-        image: '/images/images-posts/stussy.jpeg',
-        tag: 'style',
-        title: 'StreetWear',
-        link: '/post/StreetWear',
+        image: '/images/images-posts/miller.jpeg',
+        tag: 'music',
+        title: 'Mac Miller and his last album',
+        link: '/post/Mac-Miller-and-his-last-album',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
     {
         id: 3,
-        image: '/images/images-posts/graff.jpeg',
-        tag: 'style',
-        title: 'Graffiti: street art or crime?',
-        link: '/post/Gtaffiti-street-art-or-crime?',
+        image: '/images/images-posts/boyz.jpeg',
+        tag: 'music',
+        title: "Best Rapper in 90's",
+        link: '/post/Best-Rapper-in-90',
         content:
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
