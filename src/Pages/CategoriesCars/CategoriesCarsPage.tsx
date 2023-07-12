@@ -1,7 +1,12 @@
 import { Container, Grid, Typography } from '@mui/material'
+import PostListItem from 'components/Posts/PostListItem'
 import WidgetInstagram from 'components/Widget/WidgetInstagram'
 import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
+
+import Masonry from 'react-responsive-masonry'
+
+import postsCarsArray from 'utils/postsCarsArray'
 
 type Props = {}
 
@@ -37,7 +42,23 @@ const CategoriesCarsPage = (props: Props) => {
                 </Grid>
             </Grid>
             <Grid container spacing={2}>
-                <Grid item xs={8.5}></Grid>
+                <Grid item xs={8.5}>
+                    <Masonry columnsCount={2} gutter="25px">
+                        {postsCarsArray.map(
+                            ({ id, image, tag, title, link, content }) => (
+                                <Grid key={id}>
+                                    <PostListItem
+                                        image={image}
+                                        tag={tag}
+                                        title={title}
+                                        link={link}
+                                        content={content}
+                                    />
+                                </Grid>
+                            )
+                        )}
+                    </Masonry>
+                </Grid>
                 <Grid item xs={3.5}>
                     <WidgetLatestPost />
                     <WidgetInstagram />

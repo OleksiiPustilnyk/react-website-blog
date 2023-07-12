@@ -7,7 +7,7 @@ type Post = {
     content: string
 }
 
-const postsArray: Post[] = [
+const postsMusicArray: Post[] = [
     {
         id: 1,
         image: '/images/images-posts/festivals.jpeg',
@@ -37,4 +37,4 @@ const postsArray: Post[] = [
     },
 ]
 
-export default postsArray
+export default postsMusicArray
