@@ -6,11 +6,11 @@ import WidgetTags from 'components/Widget/WidgetTags'
 
 import Masonry from 'react-responsive-masonry'
 
-import postsCarsArray from 'utils/postsCarsArray'
+import postsMusicArray from 'utils/postsMusicArray'
 
 type Props = {}
 
-const CategoriesCarsPage = (props: Props) => {
+const TagMusic = (props: Props) => {
     return (
         <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <div className="breadcrumb"></div>
@@ -26,7 +26,7 @@ const CategoriesCarsPage = (props: Props) => {
                     }}
                     className="about-title"
                 >
-                    Category: <i className="category-title-pink">Cars</i>
+                    Tag: <i className="category-title-pink">Music</i>
                     <div className="icon-for-title">
                         <span className="icon-xx"></span>
                     </div>
@@ -44,7 +44,7 @@ const CategoriesCarsPage = (props: Props) => {
             <Grid container spacing={2}>
                 <Grid item xs={8.5}>
                     <Masonry columnsCount={2} gutter="25px">
-                        {postsCarsArray.map(
+                        {postsMusicArray.map(
                             ({
                                 id,
                                 image,
@@ -77,4 +77,4 @@ const CategoriesCarsPage = (props: Props) => {
         </Container>
     )
 }
-export default CategoriesCarsPage
+export default TagMusic

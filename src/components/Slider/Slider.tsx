@@ -58,25 +58,35 @@ const Slider = (props: Props) => {
                 }}
                 className="mySwiper2"
             >
-                {sliderArray.map(({ id, image, alt, title, link, tag }) => (
-                    <>
-                        <SwiperSlide key={id}>
-                            <div className="slide">
-                                <img
-                                    src={image}
-                                    alt={alt}
-                                    className="slider-image"
-                                />
-                                <div className="slider-content">
-                                    <div className="slider-tag">{tag}</div>
-                                    <NavLink to={link} className="slider-title">
-                                        {title}
-                                    </NavLink>
+                {sliderArray.map(
+                    ({ id, image, alt, title, link, tag, tagLink }) => (
+                        <>
+                            <SwiperSlide key={id}>
+                                <div className="slide">
+                                    <img
+                                        src={image}
+                                        alt={alt}
+                                        className="slider-image"
+                                    />
+                                    <div className="slider-content">
+                                        <NavLink
+                                            to={tagLink}
+                                            className="slider-tag"
+                                        >
+                                            {tag}
+                                        </NavLink>
+                                        <NavLink
+                                            to={link}
+                                            className="slider-title"
+                                        >
+                                            {title}
+                                        </NavLink>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    </>
-                ))}
+                            </SwiperSlide>
+                        </>
+                    )
+                )}
             </Swiper>
             <Swiper
                 onSwiper={setThumbsSwiper}

@@ -1,16 +1,15 @@
 import { Container, Grid, Typography } from '@mui/material'
-import PostListItem from 'components/Posts/PostListItem'
 import WidgetInstagram from 'components/Widget/WidgetInstagram'
 import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import Masonry from 'react-responsive-masonry'
-
-import postsCarsArray from 'utils/postsCarsArray'
+import tagGamesArray from 'utils/tagGamesArray'
+import PostListItem from 'components/Posts/PostListItem'
 
 type Props = {}
 
-const CategoriesCarsPage = (props: Props) => {
+const TagGames = (props: Props) => {
     return (
         <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <div className="breadcrumb"></div>
@@ -26,7 +25,7 @@ const CategoriesCarsPage = (props: Props) => {
                     }}
                     className="about-title"
                 >
-                    Category: <i className="category-title-pink">Cars</i>
+                    Tag: <i className="category-title-pink">Games</i>
                     <div className="icon-for-title">
                         <span className="icon-xx"></span>
                     </div>
@@ -43,30 +42,32 @@ const CategoriesCarsPage = (props: Props) => {
             </Grid>
             <Grid container spacing={2}>
                 <Grid item xs={8.5}>
-                    <Masonry columnsCount={2} gutter="25px">
-                        {postsCarsArray.map(
-                            ({
-                                id,
-                                image,
-                                tag,
-                                tagLink,
-                                title,
-                                link,
-                                content,
-                            }) => (
-                                <Grid key={id}>
-                                    <PostListItem
-                                        image={image}
-                                        tag={tag}
-                                        tagLink={tagLink}
-                                        title={title}
-                                        link={link}
-                                        content={content}
-                                    />
-                                </Grid>
-                            )
-                        )}
-                    </Masonry>
+                    <>
+                        <Masonry columnsCount={2} gutter="25px">
+                            {tagGamesArray.map(
+                                ({
+                                    id,
+                                    image,
+                                    tag,
+                                    tagLink,
+                                    title,
+                                    link,
+                                    content,
+                                }) => (
+                                    <Grid key={id}>
+                                        <PostListItem
+                                            image={image}
+                                            tag={tag}
+                                            tagLink={tagLink}
+                                            title={title}
+                                            link={link}
+                                            content={content}
+                                        />
+                                    </Grid>
+                                )
+                            )}
+                        </Masonry>
+                    </>
                 </Grid>
                 <Grid item xs={3.5}>
                     <WidgetLatestPost />
@@ -77,4 +78,4 @@ const CategoriesCarsPage = (props: Props) => {
         </Container>
     )
 }
-export default CategoriesCarsPage
+export default TagGames

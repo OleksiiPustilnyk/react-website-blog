@@ -5,7 +5,7 @@ import WidgetTags from 'components/Widget/WidgetTags'
 
 import './Categories.scss'
 import Masonry from 'react-responsive-masonry'
-import postsArray from 'utils/postsArray'
+import postsStyleArray from 'utils/postsStyleArray'
 import PostListItem from 'components/Posts/PostListItem'
 
 type Props = {}
@@ -44,13 +44,22 @@ const CategoriesStylePage = (props: Props) => {
             <Grid container spacing={2}>
                 <Grid item xs={8.5}>
                     <>
-                        <Masonry columnsCount={3} gutter="25px">
-                            {postsArray.map(
-                                ({ id, image, tag, title, link, content }) => (
+                        <Masonry columnsCount={2} gutter="25px">
+                            {postsStyleArray.map(
+                                ({
+                                    id,
+                                    image,
+                                    tag,
+                                    title,
+                                    tagLink,
+                                    link,
+                                    content,
+                                }) => (
                                     <Grid key={id}>
                                         <PostListItem
                                             image={image}
                                             tag={tag}
+                                            tagLink={tagLink}
                                             title={title}
                                             link={link}
                                             content={content}

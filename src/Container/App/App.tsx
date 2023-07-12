@@ -21,6 +21,17 @@ import PostGraffitiStreetArtOrCrime from 'Pages/PostPages/PostGraffitiStreetArtO
 import PostBestRapperIn90 from 'Pages/PostPages/PostBestRapperIn90/PostBestRapperIn90'
 import PostRwbRAUHWeltBegriff from 'Pages/PostPages/PostRwbRAUHWeltBegriff/PostRwbRAUHWeltBegriff'
 
+import TagMusic from 'Pages/TagsPages/TagMusic'
+import TagStreet from 'Pages/TagsPages/TagStreet'
+import TagGraffiti from 'Pages/TagsPages/TagGraffiti'
+import TagCars from 'Pages/TagsPages/TagCars'
+import TagTattoo from 'Pages/TagsPages/TagTattoo'
+import TagRap from 'Pages/TagsPages/TagRap'
+import TagFamous from 'Pages/TagsPages/TagFamous'
+import TagStyle from 'Pages/TagsPages/TagStyle'
+import TagGames from 'Pages/TagsPages/TagGames'
+import TagRWB from 'Pages/TagsPages/TagRWB'
+
 const App = () => {
     return (
         <>
@@ -67,6 +78,16 @@ const App = () => {
                     path="/post/RWB-RAUH-Welt-Begriff"
                     element={<PostRwbRAUHWeltBegriff />}
                 />
+                <Route path="/tag/music" element={<TagMusic />} />
+                <Route path="/tag/street" element={<TagStreet />} />
+                <Route path="/tag/graffiti" element={<TagGraffiti />} />
+                <Route path="/tag/cars" element={<TagCars />} />
+                <Route path="/tag/tattoo" element={<TagTattoo />} />
+                <Route path="/tag/rap" element={<TagRap />} />
+                <Route path="/tag/famous" element={<TagFamous />} />
+                <Route path="/tag/style" element={<TagStyle />} />
+                <Route path="/tag/games" element={<TagGames />} />
+                <Route path="/tag/rwb" element={<TagRWB />} />
             </Routes>
             <Footer />
         </>

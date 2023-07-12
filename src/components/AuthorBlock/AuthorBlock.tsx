@@ -13,27 +13,23 @@ const AuthorBlock = (props: Props) => {
                 justifyContent={'space-around'}
                 className="post-author"
             >
-                <NavLink to="/author" className="authot-navlink">
-                    <Grid item md={5}>
-                        {/* <div className="icon-quotes"></div> */}
+                <Grid item md={1}>
+                    <NavLink to="/author" className="authot-navlink">
                         <Avatar
                             alt="Donald Glover"
                             src={avatar}
                             sx={{ width: 50, height: 50 }}
                             className="author-avatar"
                         />
-                    </Grid>
-                    <Grid
-                        item
-                        container
-                        md={12}
-                        alignItems="center"
-                        className="author-name"
-                    >
+                    </NavLink>
+                </Grid>
+                <Grid item container md={4} alignItems="center">
+                    <NavLink to="/author" className="author-name">
                         Donald Glover
-                    </Grid>
-                </NavLink>
-                <Grid item md={1} className="author-space">
+                    </NavLink>
+                </Grid>
+
+                <Grid item md={2} className="author-space">
                     <div className="author-icon"></div>
                 </Grid>
                 <Grid

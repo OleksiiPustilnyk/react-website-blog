@@ -10,7 +10,7 @@ import postsCarsArray from 'utils/postsCarsArray'
 
 type Props = {}
 
-const CategoriesCarsPage = (props: Props) => {
+const TagCars = (props: Props) => {
     return (
         <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <div className="breadcrumb"></div>
@@ -26,7 +26,7 @@ const CategoriesCarsPage = (props: Props) => {
                     }}
                     className="about-title"
                 >
-                    Category: <i className="category-title-pink">Cars</i>
+                    Tag: <i className="category-title-pink">Cars</i>
                     <div className="icon-for-title">
                         <span className="icon-xx"></span>
                     </div>
@@ -77,4 +77,4 @@ const CategoriesCarsPage = (props: Props) => {
         </Container>
     )
 }
-export default CategoriesCarsPage
+export default TagCars
