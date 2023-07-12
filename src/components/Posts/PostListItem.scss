@@ -28,7 +28,9 @@
     }
 
     .post-tag {
-        width: 50px;
+        padding: 0 8px;
+        text-decoration: none;
+        width: auto;
         height: 18px;
         margin-bottom: 20px;
         @include font-montserrat (400, 13px);
@@ -50,11 +52,14 @@
         width: 15px;
         margin-right: 25px;
     }
-    
+    .post-tag-and-like {
+        margin-bottom: 20px;
+    }
+
     .post-title {
         text-decoration: none;
         width: max-content;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 25px;
         margin-right: 25px;
@@ -75,6 +80,7 @@
     
     .post-author {
         @include font-montserrat (400, 15px);
+        padding: 0 15px;
         color: white;
         position: relative;
     }

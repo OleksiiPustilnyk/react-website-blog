@@ -44,11 +44,20 @@ const CategoriesMusicPage = (props: Props) => {
                 <Grid item xs={8.5}>
                     <Masonry columnsCount={2} gutter="25px">
                         {postsMusicArray.map(
-                            ({ id, image, tag, title, link, content }) => (
+                            ({
+                                id,
+                                image,
+                                tag,
+                                tagLink,
+                                title,
+                                link,
+                                content,
+                            }) => (
                                 <Grid key={id}>
                                     <PostListItem
                                         image={image}
                                         tag={tag}
+                                        tagLink={tagLink}
                                         title={title}
                                         link={link}
                                         content={content}

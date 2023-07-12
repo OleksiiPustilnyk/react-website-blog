@@ -8,11 +8,12 @@ import AuthorBlock from 'components/AuthorBlock/AuthorBlock'
 type Props = {
     image: string
     tag: string
+    tagLink: string
     title: string
     link: string
     content: string
 }
-const PostListItem = ({ image, tag, title, link, content }: Props) => {
+const PostListItem = ({ image, tag, tagLink, title, link, content }: Props) => {
     return (
         <Card sx={{ borderRadius: '0', boxShadow: 'none' }}>
             <CardContent className="post" sx={{ padding: '0' }}>
@@ -28,9 +29,12 @@ const PostListItem = ({ image, tag, title, link, content }: Props) => {
                     justifyContent={'space-between'}
                     className="post-tag-and-like"
                 >
-                    <Grid item md={2} className="post-tag">
-                        {tag}
+                    <Grid item md={2}>
+                        <NavLink to={tagLink} className="post-tag">
+                            {tag}
+                        </NavLink>
                     </Grid>
+
                     <Grid item md={0.5} className="post-like"></Grid>
                 </Grid>
                 <NavLink to={link} className="post-title">

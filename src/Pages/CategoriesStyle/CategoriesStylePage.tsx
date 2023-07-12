@@ -46,11 +46,20 @@ const CategoriesStylePage = (props: Props) => {
                     <>
                         <Masonry columnsCount={2} gutter="25px">
                             {postsStyleArray.map(
-                                ({ id, image, tag, title, link, content }) => (
+                                ({
+                                    id,
+                                    image,
+                                    tag,
+                                    title,
+                                    tagLink,
+                                    link,
+                                    content,
+                                }) => (
                                     <Grid key={id}>
                                         <PostListItem
                                             image={image}
                                             tag={tag}
+                                            tagLink={tagLink}
                                             title={title}
                                             link={link}
                                             content={content}
