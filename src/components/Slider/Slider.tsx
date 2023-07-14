@@ -34,7 +34,6 @@ const Slider = (props: Props) => {
                     Autoplay,
                     Thumbs,
                     FreeMode,
-                    Navigation,
                 ]}
                 spaceBetween={10}
                 centeredSlides={true}
@@ -60,31 +59,26 @@ const Slider = (props: Props) => {
             >
                 {sliderArray.map(
                     ({ id, image, alt, title, link, tag, tagLink }) => (
-                        <>
-                            <SwiperSlide key={id}>
-                                <div className="slide">
-                                    <img
-                                        src={image}
-                                        alt={alt}
-                                        className="slider-image"
-                                    />
-                                    <div className="slider-content">
-                                        <NavLink
-                                            to={tagLink}
-                                            className="slider-tag"
-                                        >
-                                            {tag}
-                                        </NavLink>
-                                        <NavLink
-                                            to={link}
-                                            className="slider-title"
-                                        >
-                                            {title}
-                                        </NavLink>
-                                    </div>
+                        <SwiperSlide key={id}>
+                            <div className="slide">
+                                <img
+                                    src={image}
+                                    alt={alt}
+                                    className="slider-image"
+                                />
+                                <div className="slider-content">
+                                    <NavLink
+                                        to={tagLink}
+                                        className="slider-tag"
+                                    >
+                                        {tag}
+                                    </NavLink>
+                                    <NavLink to={link} className="slider-title">
+                                        {title}
+                                    </NavLink>
                                 </div>
-                            </SwiperSlide>
-                        </>
+                            </div>
+                        </SwiperSlide>
                     )
                 )}
             </Swiper>
@@ -95,7 +89,7 @@ const Slider = (props: Props) => {
                 slidesPerView={4}
                 freeMode={true}
                 watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
+                modules={[FreeMode, Thumbs]}
                 className="mySwiper"
             >
                 {sliderArray.map(({ id, title, tag }) => (
