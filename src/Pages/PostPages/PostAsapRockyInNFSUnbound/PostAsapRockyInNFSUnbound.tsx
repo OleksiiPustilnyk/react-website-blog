@@ -185,7 +185,6 @@ const PostAsapRockyInNFSUnbound = (props: Props) => {
                                         </div>
                                     </Typography>
                                 </Grid>
-
                                 <Grid item xs={6}>
                                     <SocialList />
                                 </Grid>
