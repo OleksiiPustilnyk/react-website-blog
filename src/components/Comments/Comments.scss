@@ -1,0 +1,48 @@
+@import "/src/assets/style/veriables";
+
+.comment-card {
+    background-color:  #1e2123!important;
+}
+
+.comment-card-content {
+    background-color:  #25292b;
+    border-radius: 25px
+}
+
+.contact-name-text {
+    margin-left: 20px
+}
+
+.comment-name {
+    @include font-montserrat (700, 18px);
+    color: white;
+    margin-bottom: 10px
+}
+.comment-text {
+    @include font-montserrat (400, 15px);
+    color: #9999;
+}
+
+.comment-input-title {
+    margin-top: 30px
+}
+
+.comment-title {
+    @include font-montserrat (700, 22px);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.comment-content {
+    margin-bottom: 30px;
+    @include font-open_sans (400, 15px);
+    color: #9999;
+}
+
+.comment-input-title {
+    margin-top: 60px;
+}
+
+.contact-form-input {
+    margin-bottom: 20px;
+}

@@ -59,7 +59,7 @@ const ContactPage = (props: Props) => {
                                     </div>
                                     <div className="contact-form-field">
                                         <input
-                                            type="text"
+                                            type="email"
                                             name="email"
                                             className="contact-form-input"
                                             placeholder="Email*"
