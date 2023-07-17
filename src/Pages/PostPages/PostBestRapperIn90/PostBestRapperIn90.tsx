@@ -8,6 +8,7 @@ import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import SocialList from 'components/SocialList/SocialList'
+import Comments from 'components/Comments/Comments'
 
 type Props = {}
 
@@ -191,6 +192,20 @@ const PostBestRapperIn90 = (props: Props) => {
                                     <SocialList />
                                 </Grid>
                             </Grid>
+                        </CardContent>
+                    </Card>
+                    <Card
+                        sx={{
+                            borderRadius: '0',
+                            boxShadow: 'none',
+                            marginTop: '15px',
+                        }}
+                    >
+                        <CardContent
+                            className="post"
+                            sx={{ padding: '20px 0 20px' }}
+                        >
+                            <Comments />
                         </CardContent>
                     </Card>
                 </Grid>

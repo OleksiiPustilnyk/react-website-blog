@@ -6,7 +6,6 @@ import {
     Autoplay,
     Thumbs,
     FreeMode,
-    Navigation,
 } from 'swiper'
 import sliderArray from 'utils/sliderArray'
 

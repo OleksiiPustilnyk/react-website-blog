@@ -14,10 +14,16 @@
 }
 
 .contact-form-btn {
+    cursor: pointer;
     width: 100%;
+    border: 1px solid #ee6059;
     background-color: #ee6059;
     color: white;
     border: none;
     padding: 10px;
     @include font-montserrat (600, 18px);
+}
+.contact-form-btn:hover {
+    background-color: #25292b;
+    border: 1px solid white;
 }
