@@ -19,7 +19,7 @@ type Comments = {
     email: string
 }
 
-const Comments = (props: Props) => {
+const Comment = (props: Props) => {
     const arrComments: Comments[] = [
         {
             img: '/images/images-avatar-comment/comment1.jpeg',
@@ -179,4 +179,4 @@ const Comments = (props: Props) => {
         </div>
     )
 }
-export default Comments
+export default Comment
