@@ -2,6 +2,7 @@ import { Avatar, Card, CardContent, Container, Typography } from '@mui/material'
 import avatar from 'assets/avatar/donald-glover.jpeg'
 
 import './Widget.scss'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -16,12 +17,14 @@ const WidgetAuthor = (props: Props) => {
         >
             <CardContent className="widget" sx={{ paddingTop: '15px' }}>
                 <Container maxWidth="sm" className="author-list">
-                    <Avatar
-                        alt="Donald Glover"
-                        src={avatar}
-                        sx={{ width: 100, height: 100 }}
-                        className="author-page-avatar"
-                    />
+                    <NavLink to="/author">
+                        <Avatar
+                            alt="Donald Glover"
+                            src={avatar}
+                            sx={{ width: 100, height: 100 }}
+                            className="author-page-avatar"
+                        />
+                    </NavLink>
                     <Typography
                         component="h2"
                         variant="h6"
