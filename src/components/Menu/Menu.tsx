@@ -1,4 +1,4 @@
-import FavoritesNum from 'components/FavoritesNum/FavoritesNum'
+// import FavoritesNum from 'components/FavoritesNum/FavoritesNum'
 import { NavLink } from 'react-router-dom'
 
 type Props = {}
@@ -35,7 +35,7 @@ const Menu = (props: Props) => {
                             <div className="favorites">
                                 <NavLink to="/favorites">
                                     Favorites
-                                    <FavoritesNum />
+                                    {/* <FavoritesNum /> */}
                                 </NavLink>
                             </div>
                         </li>

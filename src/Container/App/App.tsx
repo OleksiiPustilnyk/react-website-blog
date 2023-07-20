@@ -31,10 +31,27 @@ import TagFamous from 'Pages/TagsPages/TagFamous'
 import TagStyle from 'Pages/TagsPages/TagStyle'
 import TagGames from 'Pages/TagsPages/TagGames'
 import TagRWB from 'Pages/TagsPages/TagRWB'
+import { useState } from 'react'
+
+type PostInFavorite = {
+    [id: number]: number
+}
+
+// export const AppContext = createContext<Context | null>(null)
 
 const App = () => {
+    const [postInFavorite, setpostInFavorite] = useState<PostInFavorite>({})
+
+    const addPostToFavorite = (id: number, count: number) => {
+        setpostInFavorite((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0) + count,
+        }))
+    }
+
     return (
         <>
+            {/* <AppContext.Provider></AppContext.Provider> */}
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -43,7 +60,10 @@ const App = () => {
                 <Route path="/music" element={<CategoriesMusicPage />} />
                 <Route path="/cars" element={<CategoriesCarsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
-                <Route path="/favorites" element={<FavoritesPage />} />
+                <Route
+                    path="/favorites"
+                    element={<FavoritesPage postInFavorite={postInFavorite} />}
+                />
                 <Route path="/author" element={<AuthorPage />} />
                 <Route
                     path="/post/Tattoo-ideas-for-mens"

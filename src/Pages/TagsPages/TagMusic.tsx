@@ -62,6 +62,7 @@ const TagMusic = (props: Props) => {
                                         title={title}
                                         link={link}
                                         content={content}
+                                        id={id}
                                     />
                                 </Grid>
                             )
