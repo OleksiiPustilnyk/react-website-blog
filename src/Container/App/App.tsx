@@ -40,7 +40,7 @@ type PostInFavorite = {
 // export const AppContext = createContext<Context | null>(null)
 
 const App = () => {
-    const [postInFavorite, setpostInFavorite] = useState<PostInFavorite>({})
+    const [postInFavorite] = useState<PostInFavorite>({})
 
     // const addPostToFavorite = (id: number, count: number) => {
     //     setpostInFavorite((prevState) => ({
