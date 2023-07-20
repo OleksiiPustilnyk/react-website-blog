@@ -7,6 +7,7 @@ import AuthorBlock from 'components/AuthorBlock/AuthorBlock'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { toggleLike } from 'redux/likeReducer'
 
 type Props = {
     id: number
@@ -52,12 +53,13 @@ const PostListItem = ({
 
                     <Grid item md={6}>
                         <Button
-                            onClick={() =>
-                                dispatch({
-                                    type: 'TOGGLE_LIKE',
-                                    id,
-                                })
-                            }
+                            // onClick={() =>
+                            //     dispatch({
+                            //         type: 'TOGGLE_LIKE',
+                            //         id,
+                            //     })
+                            // }
+                            onClick={() => dispatch(toggleLike(id))}
                         >
                             {isLiked ? (
                                 <FavoriteIcon />
