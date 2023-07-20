@@ -42,12 +42,12 @@ type PostInFavorite = {
 const App = () => {
     const [postInFavorite, setpostInFavorite] = useState<PostInFavorite>({})
 
-    const addPostToFavorite = (id: number, count: number) => {
-        setpostInFavorite((prevState) => ({
-            ...prevState,
-            [id]: (prevState[id] || 0) + count,
-        }))
-    }
+    // const addPostToFavorite = (id: number, count: number) => {
+    //     setpostInFavorite((prevState) => ({
+    //         ...prevState,
+    //         [id]: (prevState[id] || 0) + count,
+    //     }))
+    // }
 
     return (
         <>
