@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { AnyAction } from 'redux'
+// import { AnyAction } from 'redux'
 
 type LikeState = {
     [id: number]: boolean
 }
 
-const initialState: LikeState = { 1: true, 2: true }
+const initialState: LikeState = {}
 
 // export const likeReducer = (state = initialState, action: AnyAction) => {
 //     switch (action.type) {

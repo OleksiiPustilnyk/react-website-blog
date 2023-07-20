@@ -8,6 +8,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { toggleLike } from 'redux/likeReducer'
+import { addPostsToFavorites } from 'redux/favoriteReducer'
 
 type Props = {
     id: number
@@ -17,6 +18,7 @@ type Props = {
     title: string
     link: string
     content: string
+    addPostsToFavorites?: (id: number, count: number) => void
 }
 const PostListItem = ({
     id,
@@ -53,19 +55,25 @@ const PostListItem = ({
 
                     <Grid item md={6}>
                         <Button
-                            // onClick={() =>
-                            //     dispatch({
-                            //         type: 'TOGGLE_LIKE',
-                            //         id,
-                            //     })
-                            // }
-                            onClick={() => dispatch(toggleLike(id))}
+                            onClick={() =>
+                                dispatch(addPostsToFavorites({ id }))
+                            }
                         >
-                            {isLiked ? (
-                                <FavoriteIcon />
-                            ) : (
-                                <FavoriteBorderIcon />
-                            )}
+                            <Button
+                                // onClick={() =>
+                                //     dispatch({
+                                //         type: 'TOGGLE_LIKE',
+                                //         id,
+                                //     })
+                                // }
+                                onClick={() => dispatch(toggleLike(id))}
+                            >
+                                {isLiked ? (
+                                    <FavoriteIcon />
+                                ) : (
+                                    <FavoriteBorderIcon />
+                                )}
+                            </Button>
                         </Button>
                     </Grid>
                 </Grid>

@@ -5,10 +5,18 @@ import WidgetLatestPost from 'components/Widget/WidgetLatestPost'
 import WidgetTags from 'components/Widget/WidgetTags'
 
 import './Favorites.scss'
+import FavoritesPostList from 'components/FavoritesPost/FavoritesPostList'
+import FavoritesPostListItemExtended from 'components/FavoritesPost/FavoritesPostListItemExtended'
+import { useAppSelector } from 'redux/hooks'
 
-type Props = {}
+type Props = {
+    postInFavorite: {
+        [id: number]: number
+    }
+}
 
 const FavoritesPage = (props: Props) => {
+    const postInFavorite = useAppSelector((state) => state.postInFavorite)
     return (
         <Container maxWidth="xl" sx={{ padding: '20px 0' }}>
             <div className="breadcrumb"></div>
@@ -42,7 +50,12 @@ const FavoritesPage = (props: Props) => {
                 </Grid>
             </Grid>
             <Grid container spacing={2}>
-                <Grid item xs={8.5}></Grid>
+                <Grid item xs={8.5}>
+                    <FavoritesPostList
+                        postInFavorite={postInFavorite}
+                        FavoriteItem={FavoritesPostListItemExtended}
+                    />
+                </Grid>
                 <Grid item xs={3.5}>
                     <WidgetAuthor />
                     <WidgetLatestPost />

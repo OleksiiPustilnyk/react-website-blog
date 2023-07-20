@@ -1,4 +1,4 @@
-type Post = {
+export type Post = {
     id: number
     image: string
     tag: string
@@ -100,5 +100,8 @@ const postsArray: Post[] = [
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum delectus dolores explicabo, autem iure nostrum commodi voluptatem itaque eaque id...',
     },
 ]
+
+export const getPostsObject = (array: Post[]) =>
+    array.reduce((object, post) => ({ ...object, [post.id]: post }), {})
 
 export default postsArray

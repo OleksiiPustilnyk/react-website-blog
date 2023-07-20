@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.2.4",
     "@types/react-redux": "^7.1.25",
     "@types/react-responsive-masonry": "^2.1.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
@@ -54,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.195",
     "prettier": "2.8.8"
   }
 }
